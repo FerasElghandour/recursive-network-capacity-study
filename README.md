@@ -1,50 +1,78 @@
 # Recursive Network Capacity Study
 
-**Feras Elghandour**
-
 Test whether balanced recursive topologies offer a useful accuracy or compute advantage over alternative trees and dense networks.
 
-**[Explore the interactive demonstration](https://feraselghandour.github.io/recursive-network-capacity-study/)** · [Operating scope](OPERATIONS.md)
+**[Explore the results](https://feraselghandour.github.io/recursive-network-capacity-study/)** · [Experiment protocol](PROTOCOL.md) · [Operating scope](OPERATIONS.md)
 
-[![Interactive demonstration](assets/demo-preview.png)](https://feraselghandour.github.io/recursive-network-capacity-study/)
+## How the models work
 
-## Implementation
+Each feature group passes through its own Linear + ReLU block. Every merge concatenates two hidden vectors, applies another Linear + ReLU block, then passes its output toward a classifier. The tree variants change the merge path while retaining the same trainable block shapes.
 
-A predeclared four-dataset experiment with balanced, random, skewed, and dense models; feature-order controls; ten seeds; four capacity levels; and a supplementary corrected-compute comparison. Data preprocessing, per-run metrics, histories, and analysis are included.
+<picture>
+  <source media="(max-width: 760px)" srcset="assets/topology-comparison-mobile.svg">
+  <img src="assets/topology-comparison.svg" alt="Actual eight-group seed-zero topologies: balanced has maximum merge depth three, random four and skewed seven. Blue blocks encode feature groups; orange nodes merge their hidden vectors.">
+</picture>
 
-```mermaid
-flowchart LR
- A[Four public datasets] --> B[Fixed splits and feature orders]
- B --> C[Matched topology and dense runs]
- C --> D[Held-out predictions]
- D --> E[Paired comparisons and compute controls]
-```
+Schematics generated from [the implemented topology function](run_grid.py), seed 0. Eight groups are shown; group dimensions depend on the dataset. Satimage uses nine groups. The dense comparator is a separate two-hidden-layer MLP.
 
-## Evidence and results
+## Try a small training run
 
-The completed study contains **960 main runs plus 160 compute-control runs**. Balanced trees exceed random-tree mean accuracy in **14/16 native settings**, but exceed the corrected-compute dense baseline in only **5/16**. Dense models remain faster. Fresh release checks exactly reproduce one balanced run on each of four datasets, including checkpoints and held-out predictions.
-
-![Recorded experiment view](results/accuracy_by_size.png)
-
-## Run locally
-
-Python 3.11 or later; use an isolated environment.
+Use Python 3.11 or later. From a terminal:
 
 ```sh
+git clone https://github.com/FerasElghandour/recursive-network-capacity-study.git
+cd recursive-network-capacity-study
+python -m venv .venv
+. .venv/bin/activate
 python -m pip install -r requirements.txt
+python examples/train_toy.py
+```
+
+This runs the actual `Tree` implementation on 256 generated 16-feature samples, grouped into eight pairs. It trains all three topologies on CPU for 40 full-batch steps, from matching initial parameter values. No dataset download is needed.
+
+Example output excerpt:
+
+| Topology | Parameters | Maximum merge depth | Initial → final training loss |
+|---|---:|---:|---:|
+| Balanced | 1,162 | 3 | 0.7071 → 0.1559 |
+| Random | 1,162 | 4 | 0.7075 → 0.1159 |
+| Skewed | 1,162 | 7 | 0.7075 → 0.2067 |
+
+These are demonstration outputs, **not held-out accuracy or evidence that one topology generalizes better**. They show the optimization path and parameter/depth distinction. [Complete example output](examples/train_toy-output.json) · [Example environment](examples/environment.json). Values may vary with dependency versions.
+
+Change the training duration or seed with `python examples/train_toy.py --epochs 20 --seed 1`.
+
+## Study results
+
+The recorded study contains **960 main runs plus 160 compute-control runs**, across four datasets, ten seeds and four capacity levels, with feature-order controls. Balanced trees exceed random-tree mean accuracy in **14/16 native settings**, but exceed the corrected-compute dense baseline in only **5/16**. Dense models remain faster.
+
+![Recorded test accuracy against trainable parameters across four datasets](results/accuracy_by_size.png)
+
+Means and one seed standard deviation across ten seeds, native feature order. [Measured results](MEASURED_RESULTS.md) · [Interactive comparison](https://feraselghandour.github.io/recursive-network-capacity-study/).
+
+## Reproduce the study
+
+The toy example is separate from the recorded benchmark. To inspect or reproduce benchmark evidence after preparing the included inputs described in [DATA.md](DATA.md):
+
+```sh
 python run_grid.py --self-check
 python run_grid.py --verify results
 python analyze_results.py --results results --compute-control compute_control
 ```
 
-A complete new grid is available with `python run_grid.py --out new_results`, followed by `python run_compute_control.py --main new_results --out new_control`. This is a substantial CPU workload. Only the four representative checkpoints and prediction arrays required by `--verify` are bundled; all aggregate records and training histories are retained. [Protocol](PROTOCOL.md) and [measured results](MEASURED_RESULTS.md) document the study.
+The verification command retrains four representative balanced runs and compares checkpoints and held-out predictions. Only those four checkpoints and prediction arrays are bundled; all aggregate records and training histories are retained.
 
-## Scope and limitations
+For a complete new training grid:
 
-This finite tabular study does not establish a universal scaling law or general topology advantage. Accuracy and timing depend on data, model budgets, feature order, and hardware. Four fresh representative reproductions do not mean all 1,120 runs were retrained for this release.
+```sh
+python run_grid.py --out new_results
+python run_compute_control.py --main new_results --out new_control
+```
 
-[Validation record](VALIDATION.md) · [Inputs and applicable notices](DATA.md)
+This is a substantial CPU workload. [Compute-control protocol](COMPUTE_CONTROL_PROTOCOL.md) · [Validation record](VALIDATION.md).
 
-## Rebuild the public demonstration
+## Scope
 
-Run `python build_report.py` to rebuild the explorer from the retained native-order summary. The hosted page is a static evidence explorer; the Python application and full experiments run separately.
+This finite tabular study does not establish a universal scaling law or general topology advantage. Accuracy and timing depend on data, model budgets, feature order and hardware. Four representative reproductions do not mean all 1,120 recorded runs were retrained for this release. The new toy example does not modify those records.
+
+Run `python build_report.py` to rebuild the hosted static explorer from the retained native-order summary. Full experiments run separately.

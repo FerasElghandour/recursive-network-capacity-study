@@ -1,0 +1,35 @@
+{
+  "scope": "synthetic training demonstration; no held-out evaluation",
+  "samples": 256,
+  "feature_groups": 8,
+  "features": 16,
+  "epochs": 40,
+  "seed": 0,
+  "device": "cpu",
+  "models": [
+    {
+      "topology": "balanced",
+      "parameters": 1162,
+      "max_merge_depth": 3,
+      "initial_loss": 0.707111,
+      "final_loss": 0.155935,
+      "training_accuracy": 0.964844
+    },
+    {
+      "topology": "random",
+      "parameters": 1162,
+      "max_merge_depth": 4,
+      "initial_loss": 0.707465,
+      "final_loss": 0.11586,
+      "training_accuracy": 0.976562
+    },
+    {
+      "topology": "skewed",
+      "parameters": 1162,
+      "max_merge_depth": 7,
+      "initial_loss": 0.707537,
+      "final_loss": 0.206681,
+      "training_accuracy": 0.925781
+    }
+  ]
+}
