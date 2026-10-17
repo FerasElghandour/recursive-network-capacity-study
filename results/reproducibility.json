@@ -1,0 +1,30 @@
+[
+  {
+    "dataset": "optdigits",
+    "metrics_exact": true,
+    "checkpoint_exact": true,
+    "test_logits_exact": true,
+    "max_abs_logit_difference": 0.0
+  },
+  {
+    "dataset": "pendigits",
+    "metrics_exact": true,
+    "checkpoint_exact": true,
+    "test_logits_exact": true,
+    "max_abs_logit_difference": 0.0
+  },
+  {
+    "dataset": "spambase",
+    "metrics_exact": true,
+    "checkpoint_exact": true,
+    "test_logits_exact": true,
+    "max_abs_logit_difference": 0.0
+  },
+  {
+    "dataset": "satimage",
+    "metrics_exact": true,
+    "checkpoint_exact": true,
+    "test_logits_exact": true,
+    "max_abs_logit_difference": 0.0
+  }
+]

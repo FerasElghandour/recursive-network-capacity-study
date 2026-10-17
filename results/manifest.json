@@ -1,0 +1,6776 @@
+{
+  "python": "3.11.15 (main, Mar  3 2026, 00:52:57) [Clang 17.0.0 (clang-1700.6.3.2)]",
+  "torch": "2.14.1",
+  "numpy": "2.4.6",
+  "platform": "macOS-27.0.1-arm64-arm-64bit",
+  "processor": "arm",
+  "device": "cpu",
+  "threads": 1,
+  "deterministic": true,
+  "dtype": "float32",
+  "epochs": 60,
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "widths": [
+    8,
+    16,
+    32,
+    64
+  ],
+  "batch_size": 256,
+  "lr": 0.003,
+  "weight_decay": 0.0001,
+  "optimizer": "AdamW",
+  "hashes": {
+    "run_grid.py": "732144d0d3cf933504faf7fa79f7fe8404ff4e9a8a5815b9dbd1f3a919269f61",
+    "PROTOCOL.md": "7534b567832a7a2e327f6edd1a3c434e14e5b5827665cb909f3efabc5b98f10a",
+    "data/optdigits.names": "3e82f7202d72a2b7dbdbc324c8c90fe8853164f5d6ab978a071357ad3de89f02",
+    "data/optdigits.tes": "6ebb3d2fee246a4e99363262ddf8a00a3c41bee6014c373ed9d9216ba7f651b8",
+    "data/optdigits.tra": "e1b683cc211604fe8fd8c4417e6a69f31380e0c61d4af22e93cc21e9257ffedd",
+    "data/pendigits-orig.names": "e61cb219660347353c584606a1d4a6d62d16bb902660d10372c9766480a9fb63",
+    "data/pendigits.names": "a90a76e1edac6f1b50f4b44db80587d7b92601fcbb153c83c2c3210c21b34f60",
+    "data/pendigits.tes": "8bd03229c5c5291fefe43e45465dd948d2645bf23328b9d993e0b777666b2015",
+    "data/pendigits.tra": "e2b9eb9f0d0467e2b64a4816a3420edf2b8043447576f4b84337aba44a9f97d3",
+    "data/sat.doc": "07f0312277b3bc4600548a0b75a848d72f1c88d9de416711b05cc2535d961dac",
+    "data/sat.trn": "e896dc88a960fa2404160fc4c3cb3dc53fcf4afd80ba920bf2d261bd42d12613",
+    "data/sat.tst": "4b9167b8a92baafafed7c8809aef86d0683a5e685c19d98d119fa6974f0f2479",
+    "data/spambase.DOCUMENTATION": "462e4ffba1241a5962d528364708d188dc75931d56a25a8e9b6c8bb25e094cfd",
+    "data/spambase.data": "b1ef93de71f97714d3d7d4f58fc9f718da7bbc8ac8a150eff2778616a8097b12",
+    "data/spambase.names": "df418fab7923f929237b81efa0987ddfaf2d68cf61291243625aadc684d5ab6a"
+  },
+  "jobs": [
+    {
+      "dataset": "satimage",
+      "ordering": "native",
+      "width": 16,
+      "seed": 2,
+      "model": "skewed"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "permuted",
+      "width": 64,
+      "seed": 3,
+      "model": "balanced"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "native",
+      "width": 8,
+      "seed": 5,
+      "model": "skewed"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "native",
+      "width": 16,
+      "seed": 0,
+      "model": "balanced"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "native",
+      "width": 16,
+      "seed": 6,
+      "model": "random"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "permuted",
+      "width": 64,
+      "seed": 7,
+      "model": "balanced"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "native",
+      "width": 16,
+      "seed": 0,
+      "model": "mlp"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "permuted",
+      "width": 16,
+      "seed": 7,
+      "model": "mlp"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "permuted",
+      "width": 64,
+      "seed": 7,
+      "model": "random"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "native",
+      "width": 16,
+      "seed": 8,
+      "model": "skewed"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "native",
+      "width": 64,
+      "seed": 9,
+      "model": "balanced"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "native",
+      "width": 8,
+      "seed": 6,
+      "model": "skewed"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "native",
+      "width": 32,
+      "seed": 9,
+      "model": "skewed"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "native",
+      "width": 32,
+      "seed": 9,
+      "model": "random"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "native",
+      "width": 8,
+      "seed": 5,
+      "model": "balanced"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "permuted",
+      "width": 64,
+      "seed": 0,
+      "model": "skewed"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "permuted",
+      "width": 16,
+      "seed": 6,
+      "model": "skewed"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "permuted",
+      "width": 64,
+      "seed": 4,
+      "model": "mlp"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "permuted",
+      "width": 16,
+      "seed": 1,
+      "model": "skewed"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "native",
+      "width": 16,
+      "seed": 9,
+      "model": "random"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "permuted",
+      "width": 64,
+      "seed": 1,
+      "model": "balanced"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "native",
+      "width": 64,
+      "seed": 9,
+      "model": "skewed"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "permuted",
+      "width": 64,
+      "seed": 3,
+      "model": "balanced"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "permuted",
+      "width": 64,
+      "seed": 3,
+      "model": "random"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "permuted",
+      "width": 16,
+      "seed": 0,
+      "model": "mlp"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "permuted",
+      "width": 16,
+      "seed": 8,
+      "model": "mlp"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "permuted",
+      "width": 64,
+      "seed": 9,
+      "model": "balanced"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "permuted",
+      "width": 64,
+      "seed": 0,
+      "model": "balanced"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "permuted",
+      "width": 16,
+      "seed": 4,
+      "model": "skewed"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "native",
+      "width": 32,
+      "seed": 6,
+      "model": "random"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "permuted",
+      "width": 16,
+      "seed": 0,
+      "model": "random"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "permuted",
+      "width": 16,
+      "seed": 6,
+      "model": "random"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "native",
+      "width": 16,
+      "seed": 2,
+      "model": "mlp"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "native",
+      "width": 16,
+      "seed": 6,
+      "model": "mlp"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "permuted",
+      "width": 64,
+      "seed": 2,
+      "model": "skewed"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "native",
+      "width": 64,
+      "seed": 5,
+      "model": "balanced"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "permuted",
+      "width": 64,
+      "seed": 7,
+      "model": "mlp"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "native",
+      "width": 64,
+      "seed": 9,
+      "model": "mlp"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "native",
+      "width": 16,
+      "seed": 8,
+      "model": "mlp"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "native",
+      "width": 64,
+      "seed": 3,
+      "model": "random"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "native",
+      "width": 16,
+      "seed": 2,
+      "model": "random"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "permuted",
+      "width": 64,
+      "seed": 2,
+      "model": "random"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "permuted",
+      "width": 64,
+      "seed": 7,
+      "model": "skewed"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "native",
+      "width": 16,
+      "seed": 8,
+      "model": "skewed"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "permuted",
+      "width": 16,
+      "seed": 4,
+      "model": "random"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "native",
+      "width": 8,
+      "seed": 0,
+      "model": "random"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "permuted",
+      "width": 64,
+      "seed": 4,
+      "model": "skewed"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "native",
+      "width": 16,
+      "seed": 1,
+      "model": "balanced"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "native",
+      "width": 16,
+      "seed": 0,
+      "model": "skewed"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "native",
+      "width": 64,
+      "seed": 7,
+      "model": "random"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "permuted",
+      "width": 64,
+      "seed": 0,
+      "model": "mlp"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "permuted",
+      "width": 64,
+      "seed": 6,
+      "model": "skewed"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "permuted",
+      "width": 16,
+      "seed": 9,
+      "model": "mlp"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "native",
+      "width": 32,
+      "seed": 4,
+      "model": "balanced"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "native",
+      "width": 16,
+      "seed": 2,
+      "model": "random"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "native",
+      "width": 64,
+      "seed": 6,
+      "model": "mlp"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "permuted",
+      "width": 64,
+      "seed": 5,
+      "model": "balanced"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "native",
+      "width": 64,
+      "seed": 2,
+      "model": "random"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "native",
+      "width": 32,
+      "seed": 5,
+      "model": "random"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "permuted",
+      "width": 16,
+      "seed": 8,
+      "model": "skewed"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "native",
+      "width": 32,
+      "seed": 8,
+      "model": "balanced"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "native",
+      "width": 32,
+      "seed": 9,
+      "model": "balanced"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "native",
+      "width": 16,
+      "seed": 3,
+      "model": "skewed"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "native",
+      "width": 32,
+      "seed": 1,
+      "model": "balanced"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "native",
+      "width": 64,
+      "seed": 8,
+      "model": "balanced"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "native",
+      "width": 64,
+      "seed": 4,
+      "model": "balanced"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "native",
+      "width": 8,
+      "seed": 0,
+      "model": "balanced"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "native",
+      "width": 16,
+      "seed": 3,
+      "model": "random"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "native",
+      "width": 8,
+      "seed": 9,
+      "model": "balanced"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "native",
+      "width": 16,
+      "seed": 1,
+      "model": "random"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "permuted",
+      "width": 64,
+      "seed": 5,
+      "model": "mlp"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "native",
+      "width": 8,
+      "seed": 9,
+      "model": "random"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "native",
+      "width": 8,
+      "seed": 0,
+      "model": "balanced"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "permuted",
+      "width": 16,
+      "seed": 0,
+      "model": "balanced"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "native",
+      "width": 64,
+      "seed": 8,
+      "model": "skewed"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "native",
+      "width": 32,
+      "seed": 5,
+      "model": "random"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "native",
+      "width": 16,
+      "seed": 4,
+      "model": "skewed"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "native",
+      "width": 32,
+      "seed": 8,
+      "model": "skewed"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "native",
+      "width": 16,
+      "seed": 9,
+      "model": "mlp"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "native",
+      "width": 16,
+      "seed": 8,
+      "model": "mlp"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "native",
+      "width": 32,
+      "seed": 2,
+      "model": "random"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "native",
+      "width": 64,
+      "seed": 9,
+      "model": "mlp"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "permuted",
+      "width": 16,
+      "seed": 7,
+      "model": "mlp"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "native",
+      "width": 64,
+      "seed": 6,
+      "model": "mlp"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "native",
+      "width": 64,
+      "seed": 3,
+      "model": "mlp"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "native",
+      "width": 32,
+      "seed": 6,
+      "model": "balanced"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "native",
+      "width": 16,
+      "seed": 7,
+      "model": "mlp"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "native",
+      "width": 32,
+      "seed": 6,
+      "model": "mlp"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "permuted",
+      "width": 16,
+      "seed": 1,
+      "model": "skewed"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "native",
+      "width": 64,
+      "seed": 2,
+      "model": "balanced"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "permuted",
+      "width": 64,
+      "seed": 8,
+      "model": "skewed"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "permuted",
+      "width": 64,
+      "seed": 4,
+      "model": "mlp"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "native",
+      "width": 64,
+      "seed": 2,
+      "model": "mlp"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "permuted",
+      "width": 16,
+      "seed": 8,
+      "model": "balanced"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "native",
+      "width": 16,
+      "seed": 3,
+      "model": "balanced"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "permuted",
+      "width": 16,
+      "seed": 7,
+      "model": "balanced"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "permuted",
+      "width": 16,
+      "seed": 0,
+      "model": "random"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "native",
+      "width": 8,
+      "seed": 8,
+      "model": "balanced"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "permuted",
+      "width": 64,
+      "seed": 9,
+      "model": "mlp"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "native",
+      "width": 32,
+      "seed": 4,
+      "model": "mlp"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "native",
+      "width": 8,
+      "seed": 8,
+      "model": "balanced"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "native",
+      "width": 16,
+      "seed": 1,
+      "model": "mlp"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "native",
+      "width": 8,
+      "seed": 4,
+      "model": "random"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "native",
+      "width": 32,
+      "seed": 0,
+      "model": "mlp"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "native",
+      "width": 32,
+      "seed": 5,
+      "model": "mlp"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "native",
+      "width": 16,
+      "seed": 6,
+      "model": "random"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "native",
+      "width": 16,
+      "seed": 3,
+      "model": "random"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "native",
+      "width": 16,
+      "seed": 1,
+      "model": "balanced"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "native",
+      "width": 64,
+      "seed": 1,
+      "model": "balanced"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "permuted",
+      "width": 16,
+      "seed": 2,
+      "model": "skewed"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "native",
+      "width": 8,
+      "seed": 1,
+      "model": "random"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "native",
+      "width": 16,
+      "seed": 7,
+      "model": "random"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "native",
+      "width": 8,
+      "seed": 7,
+      "model": "skewed"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "permuted",
+      "width": 16,
+      "seed": 8,
+      "model": "skewed"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "native",
+      "width": 32,
+      "seed": 9,
+      "model": "mlp"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "native",
+      "width": 64,
+      "seed": 3,
+      "model": "skewed"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "native",
+      "width": 8,
+      "seed": 9,
+      "model": "skewed"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "native",
+      "width": 16,
+      "seed": 1,
+      "model": "mlp"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "native",
+      "width": 16,
+      "seed": 8,
+      "model": "skewed"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "native",
+      "width": 64,
+      "seed": 0,
+      "model": "mlp"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "native",
+      "width": 32,
+      "seed": 4,
+      "model": "skewed"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "native",
+      "width": 16,
+      "seed": 0,
+      "model": "balanced"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "native",
+      "width": 8,
+      "seed": 5,
+      "model": "random"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "native",
+      "width": 16,
+      "seed": 4,
+      "model": "mlp"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "native",
+      "width": 16,
+      "seed": 6,
+      "model": "mlp"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "native",
+      "width": 64,
+      "seed": 1,
+      "model": "balanced"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "permuted",
+      "width": 16,
+      "seed": 3,
+      "model": "skewed"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "native",
+      "width": 16,
+      "seed": 2,
+      "model": "random"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "native",
+      "width": 16,
+      "seed": 1,
+      "model": "skewed"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "permuted",
+      "width": 64,
+      "seed": 4,
+      "model": "skewed"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "permuted",
+      "width": 16,
+      "seed": 3,
+      "model": "random"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "native",
+      "width": 64,
+      "seed": 5,
+      "model": "balanced"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "permuted",
+      "width": 64,
+      "seed": 8,
+      "model": "balanced"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "native",
+      "width": 8,
+      "seed": 3,
+      "model": "random"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "permuted",
+      "width": 64,
+      "seed": 2,
+      "model": "mlp"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "permuted",
+      "width": 64,
+      "seed": 5,
+      "model": "skewed"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "native",
+      "width": 32,
+      "seed": 1,
+      "model": "skewed"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "native",
+      "width": 64,
+      "seed": 2,
+      "model": "balanced"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "native",
+      "width": 64,
+      "seed": 5,
+      "model": "skewed"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "native",
+      "width": 32,
+      "seed": 5,
+      "model": "random"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "permuted",
+      "width": 64,
+      "seed": 8,
+      "model": "skewed"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "native",
+      "width": 8,
+      "seed": 7,
+      "model": "balanced"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "native",
+      "width": 32,
+      "seed": 4,
+      "model": "random"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "native",
+      "width": 16,
+      "seed": 3,
+      "model": "skewed"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "permuted",
+      "width": 16,
+      "seed": 6,
+      "model": "random"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "native",
+      "width": 8,
+      "seed": 5,
+      "model": "mlp"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "permuted",
+      "width": 64,
+      "seed": 7,
+      "model": "skewed"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "native",
+      "width": 8,
+      "seed": 8,
+      "model": "mlp"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "native",
+      "width": 8,
+      "seed": 1,
+      "model": "mlp"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "native",
+      "width": 32,
+      "seed": 6,
+      "model": "skewed"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "native",
+      "width": 16,
+      "seed": 9,
+      "model": "balanced"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "native",
+      "width": 8,
+      "seed": 3,
+      "model": "balanced"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "native",
+      "width": 8,
+      "seed": 8,
+      "model": "skewed"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "permuted",
+      "width": 16,
+      "seed": 4,
+      "model": "balanced"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "permuted",
+      "width": 16,
+      "seed": 2,
+      "model": "balanced"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "native",
+      "width": 8,
+      "seed": 6,
+      "model": "random"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "native",
+      "width": 64,
+      "seed": 6,
+      "model": "random"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "native",
+      "width": 64,
+      "seed": 2,
+      "model": "skewed"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "permuted",
+      "width": 16,
+      "seed": 4,
+      "model": "balanced"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "native",
+      "width": 64,
+      "seed": 3,
+      "model": "balanced"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "permuted",
+      "width": 16,
+      "seed": 2,
+      "model": "mlp"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "native",
+      "width": 8,
+      "seed": 9,
+      "model": "mlp"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "native",
+      "width": 16,
+      "seed": 5,
+      "model": "skewed"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "permuted",
+      "width": 64,
+      "seed": 6,
+      "model": "mlp"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "permuted",
+      "width": 64,
+      "seed": 0,
+      "model": "mlp"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "native",
+      "width": 64,
+      "seed": 0,
+      "model": "random"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "permuted",
+      "width": 16,
+      "seed": 8,
+      "model": "random"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "native",
+      "width": 8,
+      "seed": 2,
+      "model": "random"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "native",
+      "width": 16,
+      "seed": 6,
+      "model": "balanced"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "native",
+      "width": 32,
+      "seed": 6,
+      "model": "balanced"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "native",
+      "width": 16,
+      "seed": 2,
+      "model": "random"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "native",
+      "width": 32,
+      "seed": 8,
+      "model": "skewed"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "permuted",
+      "width": 16,
+      "seed": 2,
+      "model": "skewed"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "native",
+      "width": 64,
+      "seed": 7,
+      "model": "skewed"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "native",
+      "width": 16,
+      "seed": 9,
+      "model": "balanced"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "permuted",
+      "width": 16,
+      "seed": 4,
+      "model": "balanced"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "native",
+      "width": 64,
+      "seed": 5,
+      "model": "mlp"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "permuted",
+      "width": 64,
+      "seed": 9,
+      "model": "random"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "permuted",
+      "width": 16,
+      "seed": 9,
+      "model": "skewed"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "permuted",
+      "width": 16,
+      "seed": 4,
+      "model": "mlp"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "permuted",
+      "width": 64,
+      "seed": 3,
+      "model": "mlp"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "native",
+      "width": 8,
+      "seed": 3,
+      "model": "mlp"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "permuted",
+      "width": 64,
+      "seed": 3,
+      "model": "balanced"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "native",
+      "width": 64,
+      "seed": 8,
+      "model": "mlp"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "native",
+      "width": 64,
+      "seed": 3,
+      "model": "skewed"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "native",
+      "width": 16,
+      "seed": 8,
+      "model": "random"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "native",
+      "width": 8,
+      "seed": 0,
+      "model": "balanced"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "native",
+      "width": 8,
+      "seed": 3,
+      "model": "skewed"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "native",
+      "width": 64,
+      "seed": 4,
+      "model": "mlp"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "native",
+      "width": 64,
+      "seed": 4,
+      "model": "balanced"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "native",
+      "width": 32,
+      "seed": 5,
+      "model": "skewed"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "native",
+      "width": 16,
+      "seed": 5,
+      "model": "balanced"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "permuted",
+      "width": 64,
+      "seed": 6,
+      "model": "skewed"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "native",
+      "width": 32,
+      "seed": 0,
+      "model": "skewed"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "native",
+      "width": 32,
+      "seed": 7,
+      "model": "random"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "permuted",
+      "width": 16,
+      "seed": 1,
+      "model": "mlp"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "native",
+      "width": 16,
+      "seed": 7,
+      "model": "skewed"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "native",
+      "width": 32,
+      "seed": 2,
+      "model": "balanced"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "permuted",
+      "width": 64,
+      "seed": 2,
+      "model": "mlp"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "native",
+      "width": 8,
+      "seed": 1,
+      "model": "mlp"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "native",
+      "width": 16,
+      "seed": 7,
+      "model": "random"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "native",
+      "width": 32,
+      "seed": 3,
+      "model": "random"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "permuted",
+      "width": 64,
+      "seed": 2,
+      "model": "random"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "native",
+      "width": 64,
+      "seed": 5,
+      "model": "balanced"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "permuted",
+      "width": 16,
+      "seed": 2,
+      "model": "random"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "native",
+      "width": 64,
+      "seed": 3,
+      "model": "random"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "permuted",
+      "width": 64,
+      "seed": 8,
+      "model": "mlp"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "native",
+      "width": 8,
+      "seed": 4,
+      "model": "balanced"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "native",
+      "width": 64,
+      "seed": 7,
+      "model": "balanced"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "native",
+      "width": 16,
+      "seed": 3,
+      "model": "random"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "native",
+      "width": 32,
+      "seed": 7,
+      "model": "mlp"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "native",
+      "width": 16,
+      "seed": 2,
+      "model": "mlp"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "permuted",
+      "width": 64,
+      "seed": 9,
+      "model": "random"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "permuted",
+      "width": 64,
+      "seed": 4,
+      "model": "skewed"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "native",
+      "width": 16,
+      "seed": 5,
+      "model": "mlp"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "native",
+      "width": 32,
+      "seed": 6,
+      "model": "random"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "native",
+      "width": 8,
+      "seed": 4,
+      "model": "mlp"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "permuted",
+      "width": 16,
+      "seed": 8,
+      "model": "random"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "permuted",
+      "width": 16,
+      "seed": 2,
+      "model": "random"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "native",
+      "width": 64,
+      "seed": 2,
+      "model": "random"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "native",
+      "width": 16,
+      "seed": 4,
+      "model": "mlp"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "permuted",
+      "width": 16,
+      "seed": 3,
+      "model": "balanced"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "native",
+      "width": 64,
+      "seed": 6,
+      "model": "skewed"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "permuted",
+      "width": 64,
+      "seed": 0,
+      "model": "random"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "native",
+      "width": 64,
+      "seed": 1,
+      "model": "skewed"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "permuted",
+      "width": 16,
+      "seed": 7,
+      "model": "skewed"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "permuted",
+      "width": 16,
+      "seed": 9,
+      "model": "random"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "native",
+      "width": 32,
+      "seed": 7,
+      "model": "balanced"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "native",
+      "width": 64,
+      "seed": 1,
+      "model": "skewed"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "native",
+      "width": 16,
+      "seed": 6,
+      "model": "skewed"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "native",
+      "width": 32,
+      "seed": 5,
+      "model": "skewed"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "permuted",
+      "width": 16,
+      "seed": 8,
+      "model": "random"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "native",
+      "width": 32,
+      "seed": 8,
+      "model": "random"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "native",
+      "width": 64,
+      "seed": 3,
+      "model": "balanced"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "permuted",
+      "width": 16,
+      "seed": 7,
+      "model": "mlp"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "native",
+      "width": 64,
+      "seed": 2,
+      "model": "random"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "native",
+      "width": 64,
+      "seed": 6,
+      "model": "random"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "permuted",
+      "width": 16,
+      "seed": 7,
+      "model": "skewed"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "native",
+      "width": 32,
+      "seed": 0,
+      "model": "skewed"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "permuted",
+      "width": 16,
+      "seed": 5,
+      "model": "mlp"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "native",
+      "width": 32,
+      "seed": 2,
+      "model": "mlp"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "permuted",
+      "width": 64,
+      "seed": 3,
+      "model": "skewed"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "native",
+      "width": 16,
+      "seed": 8,
+      "model": "mlp"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "native",
+      "width": 32,
+      "seed": 5,
+      "model": "balanced"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "native",
+      "width": 64,
+      "seed": 2,
+      "model": "random"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "native",
+      "width": 64,
+      "seed": 4,
+      "model": "balanced"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "native",
+      "width": 32,
+      "seed": 1,
+      "model": "mlp"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "native",
+      "width": 64,
+      "seed": 3,
+      "model": "balanced"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "native",
+      "width": 32,
+      "seed": 5,
+      "model": "skewed"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "native",
+      "width": 8,
+      "seed": 5,
+      "model": "random"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "native",
+      "width": 32,
+      "seed": 4,
+      "model": "mlp"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "permuted",
+      "width": 64,
+      "seed": 4,
+      "model": "skewed"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "native",
+      "width": 64,
+      "seed": 5,
+      "model": "balanced"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "permuted",
+      "width": 16,
+      "seed": 3,
+      "model": "skewed"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "native",
+      "width": 32,
+      "seed": 6,
+      "model": "skewed"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "permuted",
+      "width": 16,
+      "seed": 4,
+      "model": "mlp"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "native",
+      "width": 32,
+      "seed": 5,
+      "model": "mlp"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "native",
+      "width": 16,
+      "seed": 0,
+      "model": "mlp"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "permuted",
+      "width": 64,
+      "seed": 5,
+      "model": "random"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "native",
+      "width": 16,
+      "seed": 6,
+      "model": "skewed"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "native",
+      "width": 64,
+      "seed": 6,
+      "model": "balanced"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "permuted",
+      "width": 16,
+      "seed": 9,
+      "model": "mlp"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "native",
+      "width": 64,
+      "seed": 2,
+      "model": "skewed"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "native",
+      "width": 8,
+      "seed": 4,
+      "model": "balanced"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "native",
+      "width": 8,
+      "seed": 0,
+      "model": "random"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "native",
+      "width": 64,
+      "seed": 0,
+      "model": "skewed"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "native",
+      "width": 16,
+      "seed": 6,
+      "model": "random"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "native",
+      "width": 64,
+      "seed": 2,
+      "model": "mlp"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "native",
+      "width": 16,
+      "seed": 9,
+      "model": "skewed"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "permuted",
+      "width": 64,
+      "seed": 6,
+      "model": "random"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "permuted",
+      "width": 16,
+      "seed": 6,
+      "model": "mlp"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "permuted",
+      "width": 16,
+      "seed": 0,
+      "model": "mlp"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "native",
+      "width": 32,
+      "seed": 6,
+      "model": "mlp"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "native",
+      "width": 64,
+      "seed": 0,
+      "model": "balanced"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "native",
+      "width": 8,
+      "seed": 0,
+      "model": "mlp"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "permuted",
+      "width": 64,
+      "seed": 5,
+      "model": "mlp"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "native",
+      "width": 8,
+      "seed": 2,
+      "model": "mlp"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "permuted",
+      "width": 64,
+      "seed": 2,
+      "model": "skewed"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "native",
+      "width": 8,
+      "seed": 3,
+      "model": "mlp"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "native",
+      "width": 32,
+      "seed": 1,
+      "model": "skewed"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "permuted",
+      "width": 16,
+      "seed": 0,
+      "model": "balanced"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "permuted",
+      "width": 16,
+      "seed": 8,
+      "model": "balanced"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "permuted",
+      "width": 16,
+      "seed": 4,
+      "model": "skewed"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "native",
+      "width": 8,
+      "seed": 0,
+      "model": "mlp"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "native",
+      "width": 64,
+      "seed": 2,
+      "model": "balanced"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "native",
+      "width": 16,
+      "seed": 8,
+      "model": "balanced"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "native",
+      "width": 32,
+      "seed": 3,
+      "model": "random"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "native",
+      "width": 16,
+      "seed": 6,
+      "model": "mlp"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "permuted",
+      "width": 64,
+      "seed": 1,
+      "model": "skewed"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "native",
+      "width": 8,
+      "seed": 4,
+      "model": "skewed"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "native",
+      "width": 8,
+      "seed": 8,
+      "model": "mlp"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "permuted",
+      "width": 64,
+      "seed": 1,
+      "model": "random"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "native",
+      "width": 16,
+      "seed": 7,
+      "model": "mlp"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "native",
+      "width": 8,
+      "seed": 7,
+      "model": "mlp"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "native",
+      "width": 16,
+      "seed": 9,
+      "model": "skewed"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "permuted",
+      "width": 16,
+      "seed": 7,
+      "model": "skewed"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "permuted",
+      "width": 64,
+      "seed": 4,
+      "model": "random"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "native",
+      "width": 16,
+      "seed": 3,
+      "model": "balanced"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "native",
+      "width": 16,
+      "seed": 0,
+      "model": "skewed"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "native",
+      "width": 8,
+      "seed": 7,
+      "model": "skewed"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "native",
+      "width": 64,
+      "seed": 2,
+      "model": "balanced"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "permuted",
+      "width": 64,
+      "seed": 3,
+      "model": "random"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "native",
+      "width": 32,
+      "seed": 3,
+      "model": "balanced"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "native",
+      "width": 32,
+      "seed": 0,
+      "model": "random"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "native",
+      "width": 64,
+      "seed": 1,
+      "model": "skewed"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "permuted",
+      "width": 64,
+      "seed": 8,
+      "model": "random"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "native",
+      "width": 16,
+      "seed": 8,
+      "model": "balanced"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "native",
+      "width": 32,
+      "seed": 2,
+      "model": "skewed"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "permuted",
+      "width": 64,
+      "seed": 7,
+      "model": "balanced"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "native",
+      "width": 32,
+      "seed": 6,
+      "model": "balanced"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "permuted",
+      "width": 16,
+      "seed": 4,
+      "model": "skewed"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "permuted",
+      "width": 64,
+      "seed": 4,
+      "model": "mlp"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "native",
+      "width": 32,
+      "seed": 3,
+      "model": "random"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "permuted",
+      "width": 64,
+      "seed": 8,
+      "model": "skewed"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "native",
+      "width": 64,
+      "seed": 5,
+      "model": "mlp"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "permuted",
+      "width": 16,
+      "seed": 5,
+      "model": "skewed"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "native",
+      "width": 32,
+      "seed": 4,
+      "model": "random"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "permuted",
+      "width": 64,
+      "seed": 9,
+      "model": "skewed"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "native",
+      "width": 32,
+      "seed": 1,
+      "model": "skewed"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "native",
+      "width": 8,
+      "seed": 9,
+      "model": "mlp"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "native",
+      "width": 32,
+      "seed": 2,
+      "model": "balanced"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "permuted",
+      "width": 16,
+      "seed": 5,
+      "model": "balanced"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "native",
+      "width": 16,
+      "seed": 5,
+      "model": "random"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "native",
+      "width": 64,
+      "seed": 4,
+      "model": "mlp"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "native",
+      "width": 8,
+      "seed": 4,
+      "model": "mlp"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "permuted",
+      "width": 16,
+      "seed": 5,
+      "model": "mlp"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "permuted",
+      "width": 64,
+      "seed": 7,
+      "model": "skewed"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "permuted",
+      "width": 64,
+      "seed": 9,
+      "model": "balanced"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "native",
+      "width": 64,
+      "seed": 7,
+      "model": "mlp"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "native",
+      "width": 8,
+      "seed": 4,
+      "model": "mlp"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "native",
+      "width": 8,
+      "seed": 2,
+      "model": "skewed"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "permuted",
+      "width": 64,
+      "seed": 6,
+      "model": "balanced"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "native",
+      "width": 64,
+      "seed": 9,
+      "model": "skewed"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "native",
+      "width": 64,
+      "seed": 2,
+      "model": "mlp"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "permuted",
+      "width": 64,
+      "seed": 6,
+      "model": "skewed"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "native",
+      "width": 16,
+      "seed": 2,
+      "model": "balanced"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "native",
+      "width": 32,
+      "seed": 1,
+      "model": "balanced"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "permuted",
+      "width": 16,
+      "seed": 2,
+      "model": "random"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "native",
+      "width": 32,
+      "seed": 2,
+      "model": "skewed"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "permuted",
+      "width": 16,
+      "seed": 8,
+      "model": "mlp"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "native",
+      "width": 8,
+      "seed": 6,
+      "model": "skewed"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "native",
+      "width": 8,
+      "seed": 2,
+      "model": "random"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "native",
+      "width": 8,
+      "seed": 7,
+      "model": "mlp"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "native",
+      "width": 8,
+      "seed": 7,
+      "model": "mlp"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "native",
+      "width": 64,
+      "seed": 0,
+      "model": "mlp"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "native",
+      "width": 8,
+      "seed": 8,
+      "model": "random"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "native",
+      "width": 8,
+      "seed": 6,
+      "model": "balanced"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "native",
+      "width": 8,
+      "seed": 1,
+      "model": "skewed"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "native",
+      "width": 32,
+      "seed": 4,
+      "model": "skewed"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "permuted",
+      "width": 16,
+      "seed": 3,
+      "model": "skewed"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "native",
+      "width": 8,
+      "seed": 1,
+      "model": "random"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "native",
+      "width": 16,
+      "seed": 2,
+      "model": "skewed"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "native",
+      "width": 16,
+      "seed": 4,
+      "model": "mlp"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "permuted",
+      "width": 16,
+      "seed": 3,
+      "model": "mlp"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "permuted",
+      "width": 64,
+      "seed": 5,
+      "model": "skewed"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "native",
+      "width": 16,
+      "seed": 4,
+      "model": "skewed"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "permuted",
+      "width": 16,
+      "seed": 3,
+      "model": "skewed"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "native",
+      "width": 16,
+      "seed": 0,
+      "model": "skewed"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "native",
+      "width": 8,
+      "seed": 4,
+      "model": "random"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "native",
+      "width": 16,
+      "seed": 2,
+      "model": "balanced"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "native",
+      "width": 32,
+      "seed": 1,
+      "model": "skewed"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "native",
+      "width": 64,
+      "seed": 1,
+      "model": "random"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "permuted",
+      "width": 16,
+      "seed": 6,
+      "model": "skewed"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "permuted",
+      "width": 16,
+      "seed": 5,
+      "model": "random"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "permuted",
+      "width": 16,
+      "seed": 2,
+      "model": "balanced"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "permuted",
+      "width": 64,
+      "seed": 5,
+      "model": "skewed"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "native",
+      "width": 32,
+      "seed": 0,
+      "model": "random"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "permuted",
+      "width": 64,
+      "seed": 0,
+      "model": "skewed"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "native",
+      "width": 8,
+      "seed": 9,
+      "model": "mlp"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "native",
+      "width": 16,
+      "seed": 3,
+      "model": "mlp"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "native",
+      "width": 64,
+      "seed": 6,
+      "model": "balanced"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "permuted",
+      "width": 16,
+      "seed": 6,
+      "model": "mlp"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "native",
+      "width": 8,
+      "seed": 7,
+      "model": "balanced"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "native",
+      "width": 32,
+      "seed": 0,
+      "model": "balanced"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "permuted",
+      "width": 64,
+      "seed": 5,
+      "model": "skewed"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "native",
+      "width": 32,
+      "seed": 7,
+      "model": "skewed"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "native",
+      "width": 8,
+      "seed": 0,
+      "model": "skewed"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "native",
+      "width": 64,
+      "seed": 8,
+      "model": "random"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "native",
+      "width": 8,
+      "seed": 7,
+      "model": "skewed"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "native",
+      "width": 16,
+      "seed": 6,
+      "model": "mlp"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "native",
+      "width": 8,
+      "seed": 5,
+      "model": "skewed"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "native",
+      "width": 16,
+      "seed": 7,
+      "model": "balanced"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "native",
+      "width": 8,
+      "seed": 1,
+      "model": "balanced"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "native",
+      "width": 8,
+      "seed": 3,
+      "model": "mlp"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "native",
+      "width": 32,
+      "seed": 8,
+      "model": "skewed"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "native",
+      "width": 16,
+      "seed": 2,
+      "model": "skewed"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "native",
+      "width": 16,
+      "seed": 3,
+      "model": "mlp"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "native",
+      "width": 64,
+      "seed": 3,
+      "model": "random"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "native",
+      "width": 32,
+      "seed": 3,
+      "model": "balanced"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "native",
+      "width": 16,
+      "seed": 0,
+      "model": "random"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "permuted",
+      "width": 64,
+      "seed": 0,
+      "model": "skewed"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "permuted",
+      "width": 64,
+      "seed": 7,
+      "model": "mlp"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "native",
+      "width": 32,
+      "seed": 3,
+      "model": "mlp"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "permuted",
+      "width": 16,
+      "seed": 6,
+      "model": "mlp"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "permuted",
+      "width": 16,
+      "seed": 8,
+      "model": "balanced"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "permuted",
+      "width": 64,
+      "seed": 6,
+      "model": "balanced"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "native",
+      "width": 64,
+      "seed": 8,
+      "model": "random"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "native",
+      "width": 32,
+      "seed": 9,
+      "model": "skewed"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "permuted",
+      "width": 16,
+      "seed": 6,
+      "model": "balanced"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "permuted",
+      "width": 16,
+      "seed": 0,
+      "model": "skewed"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "native",
+      "width": 32,
+      "seed": 9,
+      "model": "balanced"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "permuted",
+      "width": 16,
+      "seed": 9,
+      "model": "random"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "native",
+      "width": 64,
+      "seed": 0,
+      "model": "skewed"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "permuted",
+      "width": 16,
+      "seed": 9,
+      "model": "balanced"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "native",
+      "width": 32,
+      "seed": 3,
+      "model": "skewed"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "native",
+      "width": 32,
+      "seed": 0,
+      "model": "balanced"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "native",
+      "width": 64,
+      "seed": 6,
+      "model": "mlp"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "native",
+      "width": 8,
+      "seed": 7,
+      "model": "random"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "native",
+      "width": 8,
+      "seed": 5,
+      "model": "balanced"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "native",
+      "width": 16,
+      "seed": 0,
+      "model": "random"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "native",
+      "width": 16,
+      "seed": 4,
+      "model": "balanced"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "permuted",
+      "width": 64,
+      "seed": 9,
+      "model": "random"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "native",
+      "width": 32,
+      "seed": 1,
+      "model": "mlp"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "native",
+      "width": 16,
+      "seed": 1,
+      "model": "mlp"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "permuted",
+      "width": 16,
+      "seed": 5,
+      "model": "skewed"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "permuted",
+      "width": 64,
+      "seed": 5,
+      "model": "mlp"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "permuted",
+      "width": 16,
+      "seed": 1,
+      "model": "mlp"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "permuted",
+      "width": 16,
+      "seed": 0,
+      "model": "random"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "permuted",
+      "width": 16,
+      "seed": 4,
+      "model": "skewed"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "permuted",
+      "width": 64,
+      "seed": 1,
+      "model": "skewed"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "permuted",
+      "width": 64,
+      "seed": 7,
+      "model": "skewed"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "native",
+      "width": 16,
+      "seed": 4,
+      "model": "random"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "permuted",
+      "width": 16,
+      "seed": 5,
+      "model": "skewed"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "permuted",
+      "width": 16,
+      "seed": 1,
+      "model": "balanced"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "permuted",
+      "width": 64,
+      "seed": 6,
+      "model": "balanced"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "native",
+      "width": 16,
+      "seed": 3,
+      "model": "balanced"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "native",
+      "width": 8,
+      "seed": 8,
+      "model": "skewed"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "native",
+      "width": 8,
+      "seed": 7,
+      "model": "random"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "permuted",
+      "width": 64,
+      "seed": 1,
+      "model": "random"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "native",
+      "width": 8,
+      "seed": 3,
+      "model": "skewed"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "permuted",
+      "width": 16,
+      "seed": 9,
+      "model": "random"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "permuted",
+      "width": 16,
+      "seed": 7,
+      "model": "mlp"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "native",
+      "width": 16,
+      "seed": 4,
+      "model": "skewed"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "native",
+      "width": 64,
+      "seed": 3,
+      "model": "mlp"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "permuted",
+      "width": 64,
+      "seed": 9,
+      "model": "skewed"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "native",
+      "width": 32,
+      "seed": 7,
+      "model": "balanced"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "native",
+      "width": 8,
+      "seed": 6,
+      "model": "mlp"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "native",
+      "width": 32,
+      "seed": 1,
+      "model": "mlp"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "permuted",
+      "width": 16,
+      "seed": 0,
+      "model": "mlp"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "permuted",
+      "width": 16,
+      "seed": 1,
+      "model": "skewed"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "permuted",
+      "width": 64,
+      "seed": 6,
+      "model": "mlp"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "permuted",
+      "width": 64,
+      "seed": 5,
+      "model": "random"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "native",
+      "width": 8,
+      "seed": 6,
+      "model": "balanced"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "native",
+      "width": 16,
+      "seed": 7,
+      "model": "mlp"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "native",
+      "width": 16,
+      "seed": 7,
+      "model": "random"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "native",
+      "width": 16,
+      "seed": 1,
+      "model": "balanced"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "native",
+      "width": 32,
+      "seed": 7,
+      "model": "random"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "native",
+      "width": 64,
+      "seed": 4,
+      "model": "skewed"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "native",
+      "width": 8,
+      "seed": 1,
+      "model": "balanced"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "native",
+      "width": 16,
+      "seed": 4,
+      "model": "random"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "permuted",
+      "width": 64,
+      "seed": 3,
+      "model": "mlp"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "native",
+      "width": 64,
+      "seed": 1,
+      "model": "mlp"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "permuted",
+      "width": 16,
+      "seed": 5,
+      "model": "balanced"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "native",
+      "width": 64,
+      "seed": 9,
+      "model": "random"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "native",
+      "width": 16,
+      "seed": 3,
+      "model": "random"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "native",
+      "width": 32,
+      "seed": 0,
+      "model": "balanced"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "native",
+      "width": 8,
+      "seed": 1,
+      "model": "mlp"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "permuted",
+      "width": 64,
+      "seed": 8,
+      "model": "balanced"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "native",
+      "width": 16,
+      "seed": 9,
+      "model": "skewed"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "native",
+      "width": 64,
+      "seed": 8,
+      "model": "skewed"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "permuted",
+      "width": 64,
+      "seed": 5,
+      "model": "balanced"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "native",
+      "width": 64,
+      "seed": 8,
+      "model": "balanced"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "native",
+      "width": 16,
+      "seed": 9,
+      "model": "random"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "native",
+      "width": 8,
+      "seed": 8,
+      "model": "balanced"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "permuted",
+      "width": 16,
+      "seed": 8,
+      "model": "skewed"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "permuted",
+      "width": 16,
+      "seed": 1,
+      "model": "balanced"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "native",
+      "width": 64,
+      "seed": 4,
+      "model": "skewed"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "native",
+      "width": 32,
+      "seed": 9,
+      "model": "random"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "native",
+      "width": 32,
+      "seed": 7,
+      "model": "mlp"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "native",
+      "width": 16,
+      "seed": 1,
+      "model": "balanced"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "permuted",
+      "width": 16,
+      "seed": 3,
+      "model": "balanced"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "native",
+      "width": 32,
+      "seed": 6,
+      "model": "skewed"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "native",
+      "width": 8,
+      "seed": 6,
+      "model": "random"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "native",
+      "width": 8,
+      "seed": 6,
+      "model": "skewed"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "native",
+      "width": 32,
+      "seed": 2,
+      "model": "mlp"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "native",
+      "width": 16,
+      "seed": 9,
+      "model": "mlp"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "native",
+      "width": 8,
+      "seed": 4,
+      "model": "skewed"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "native",
+      "width": 64,
+      "seed": 6,
+      "model": "balanced"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "native",
+      "width": 16,
+      "seed": 8,
+      "model": "mlp"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "permuted",
+      "width": 64,
+      "seed": 2,
+      "model": "balanced"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "permuted",
+      "width": 64,
+      "seed": 6,
+      "model": "mlp"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "permuted",
+      "width": 64,
+      "seed": 7,
+      "model": "random"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "native",
+      "width": 32,
+      "seed": 4,
+      "model": "skewed"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "permuted",
+      "width": 16,
+      "seed": 7,
+      "model": "random"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "permuted",
+      "width": 16,
+      "seed": 3,
+      "model": "balanced"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "native",
+      "width": 64,
+      "seed": 9,
+      "model": "random"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "native",
+      "width": 32,
+      "seed": 0,
+      "model": "random"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "native",
+      "width": 32,
+      "seed": 1,
+      "model": "random"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "native",
+      "width": 8,
+      "seed": 1,
+      "model": "skewed"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "permuted",
+      "width": 64,
+      "seed": 1,
+      "model": "mlp"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "native",
+      "width": 64,
+      "seed": 7,
+      "model": "skewed"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "native",
+      "width": 8,
+      "seed": 3,
+      "model": "skewed"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "native",
+      "width": 32,
+      "seed": 5,
+      "model": "random"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "native",
+      "width": 8,
+      "seed": 9,
+      "model": "mlp"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "permuted",
+      "width": 64,
+      "seed": 7,
+      "model": "random"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "permuted",
+      "width": 64,
+      "seed": 1,
+      "model": "skewed"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "native",
+      "width": 32,
+      "seed": 0,
+      "model": "random"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "native",
+      "width": 8,
+      "seed": 5,
+      "model": "random"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "permuted",
+      "width": 16,
+      "seed": 2,
+      "model": "skewed"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "native",
+      "width": 64,
+      "seed": 3,
+      "model": "mlp"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "permuted",
+      "width": 16,
+      "seed": 3,
+      "model": "mlp"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "native",
+      "width": 16,
+      "seed": 9,
+      "model": "mlp"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "native",
+      "width": 32,
+      "seed": 2,
+      "model": "skewed"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "native",
+      "width": 64,
+      "seed": 8,
+      "model": "balanced"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "permuted",
+      "width": 64,
+      "seed": 9,
+      "model": "mlp"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "native",
+      "width": 16,
+      "seed": 9,
+      "model": "balanced"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "native",
+      "width": 16,
+      "seed": 5,
+      "model": "balanced"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "native",
+      "width": 16,
+      "seed": 0,
+      "model": "mlp"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "native",
+      "width": 16,
+      "seed": 1,
+      "model": "random"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "native",
+      "width": 8,
+      "seed": 6,
+      "model": "random"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "native",
+      "width": 64,
+      "seed": 0,
+      "model": "mlp"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "permuted",
+      "width": 16,
+      "seed": 4,
+      "model": "random"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "native",
+      "width": 32,
+      "seed": 3,
+      "model": "balanced"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "permuted",
+      "width": 64,
+      "seed": 9,
+      "model": "skewed"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "permuted",
+      "width": 64,
+      "seed": 4,
+      "model": "random"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "native",
+      "width": 32,
+      "seed": 4,
+      "model": "balanced"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "permuted",
+      "width": 16,
+      "seed": 7,
+      "model": "random"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "native",
+      "width": 16,
+      "seed": 5,
+      "model": "random"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "native",
+      "width": 8,
+      "seed": 2,
+      "model": "mlp"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "native",
+      "width": 32,
+      "seed": 1,
+      "model": "balanced"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "permuted",
+      "width": 16,
+      "seed": 6,
+      "model": "balanced"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "native",
+      "width": 16,
+      "seed": 6,
+      "model": "balanced"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "permuted",
+      "width": 64,
+      "seed": 0,
+      "model": "mlp"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "native",
+      "width": 8,
+      "seed": 9,
+      "model": "balanced"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "native",
+      "width": 8,
+      "seed": 3,
+      "model": "skewed"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "native",
+      "width": 32,
+      "seed": 6,
+      "model": "mlp"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "permuted",
+      "width": 16,
+      "seed": 4,
+      "model": "random"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "native",
+      "width": 8,
+      "seed": 6,
+      "model": "mlp"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "native",
+      "width": 8,
+      "seed": 5,
+      "model": "balanced"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "permuted",
+      "width": 16,
+      "seed": 8,
+      "model": "random"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "permuted",
+      "width": 64,
+      "seed": 1,
+      "model": "balanced"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "permuted",
+      "width": 16,
+      "seed": 3,
+      "model": "random"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "permuted",
+      "width": 16,
+      "seed": 6,
+      "model": "skewed"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "native",
+      "width": 64,
+      "seed": 8,
+      "model": "mlp"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "native",
+      "width": 32,
+      "seed": 5,
+      "model": "mlp"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "native",
+      "width": 32,
+      "seed": 9,
+      "model": "skewed"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "native",
+      "width": 32,
+      "seed": 2,
+      "model": "random"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "native",
+      "width": 8,
+      "seed": 4,
+      "model": "random"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "native",
+      "width": 64,
+      "seed": 8,
+      "model": "random"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "permuted",
+      "width": 64,
+      "seed": 5,
+      "model": "balanced"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "native",
+      "width": 8,
+      "seed": 6,
+      "model": "skewed"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "native",
+      "width": 16,
+      "seed": 7,
+      "model": "random"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "native",
+      "width": 32,
+      "seed": 6,
+      "model": "random"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "native",
+      "width": 8,
+      "seed": 5,
+      "model": "mlp"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "native",
+      "width": 64,
+      "seed": 8,
+      "model": "skewed"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "native",
+      "width": 32,
+      "seed": 1,
+      "model": "random"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "native",
+      "width": 64,
+      "seed": 9,
+      "model": "random"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "permuted",
+      "width": 64,
+      "seed": 8,
+      "model": "random"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "native",
+      "width": 8,
+      "seed": 3,
+      "model": "balanced"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "permuted",
+      "width": 64,
+      "seed": 5,
+      "model": "random"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "native",
+      "width": 8,
+      "seed": 1,
+      "model": "balanced"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "permuted",
+      "width": 64,
+      "seed": 0,
+      "model": "random"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "native",
+      "width": 8,
+      "seed": 0,
+      "model": "random"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "native",
+      "width": 32,
+      "seed": 0,
+      "model": "mlp"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "permuted",
+      "width": 16,
+      "seed": 6,
+      "model": "random"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "permuted",
+      "width": 16,
+      "seed": 4,
+      "model": "mlp"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "permuted",
+      "width": 64,
+      "seed": 3,
+      "model": "mlp"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "permuted",
+      "width": 64,
+      "seed": 7,
+      "model": "balanced"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "native",
+      "width": 8,
+      "seed": 9,
+      "model": "random"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "native",
+      "width": 16,
+      "seed": 8,
+      "model": "balanced"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "permuted",
+      "width": 64,
+      "seed": 1,
+      "model": "mlp"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "native",
+      "width": 64,
+      "seed": 8,
+      "model": "mlp"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "permuted",
+      "width": 16,
+      "seed": 5,
+      "model": "mlp"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "native",
+      "width": 64,
+      "seed": 3,
+      "model": "balanced"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "native",
+      "width": 16,
+      "seed": 4,
+      "model": "balanced"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "permuted",
+      "width": 64,
+      "seed": 1,
+      "model": "mlp"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "permuted",
+      "width": 64,
+      "seed": 7,
+      "model": "balanced"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "native",
+      "width": 64,
+      "seed": 0,
+      "model": "random"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "native",
+      "width": 16,
+      "seed": 3,
+      "model": "balanced"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "native",
+      "width": 8,
+      "seed": 5,
+      "model": "mlp"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "native",
+      "width": 32,
+      "seed": 7,
+      "model": "skewed"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "native",
+      "width": 64,
+      "seed": 9,
+      "model": "mlp"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "native",
+      "width": 64,
+      "seed": 4,
+      "model": "random"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "native",
+      "width": 8,
+      "seed": 7,
+      "model": "mlp"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "native",
+      "width": 32,
+      "seed": 6,
+      "model": "mlp"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "native",
+      "width": 64,
+      "seed": 0,
+      "model": "random"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "native",
+      "width": 8,
+      "seed": 2,
+      "model": "balanced"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "native",
+      "width": 64,
+      "seed": 7,
+      "model": "random"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "native",
+      "width": 32,
+      "seed": 0,
+      "model": "mlp"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "permuted",
+      "width": 64,
+      "seed": 7,
+      "model": "mlp"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "permuted",
+      "width": 16,
+      "seed": 0,
+      "model": "balanced"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "native",
+      "width": 8,
+      "seed": 5,
+      "model": "mlp"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "native",
+      "width": 16,
+      "seed": 0,
+      "model": "balanced"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "permuted",
+      "width": 64,
+      "seed": 8,
+      "model": "mlp"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "native",
+      "width": 32,
+      "seed": 2,
+      "model": "random"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "permuted",
+      "width": 64,
+      "seed": 7,
+      "model": "mlp"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "native",
+      "width": 8,
+      "seed": 6,
+      "model": "mlp"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "permuted",
+      "width": 16,
+      "seed": 1,
+      "model": "mlp"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "native",
+      "width": 32,
+      "seed": 8,
+      "model": "balanced"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "permuted",
+      "width": 16,
+      "seed": 4,
+      "model": "random"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "native",
+      "width": 8,
+      "seed": 4,
+      "model": "balanced"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "native",
+      "width": 16,
+      "seed": 0,
+      "model": "skewed"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "native",
+      "width": 16,
+      "seed": 8,
+      "model": "random"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "native",
+      "width": 16,
+      "seed": 4,
+      "model": "balanced"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "native",
+      "width": 64,
+      "seed": 2,
+      "model": "mlp"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "native",
+      "width": 16,
+      "seed": 1,
+      "model": "mlp"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "permuted",
+      "width": 16,
+      "seed": 1,
+      "model": "random"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "native",
+      "width": 32,
+      "seed": 1,
+      "model": "balanced"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "native",
+      "width": 64,
+      "seed": 4,
+      "model": "random"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "native",
+      "width": 32,
+      "seed": 4,
+      "model": "skewed"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "native",
+      "width": 64,
+      "seed": 9,
+      "model": "balanced"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "permuted",
+      "width": 16,
+      "seed": 4,
+      "model": "balanced"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "permuted",
+      "width": 64,
+      "seed": 0,
+      "model": "balanced"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "native",
+      "width": 64,
+      "seed": 3,
+      "model": "skewed"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "native",
+      "width": 32,
+      "seed": 0,
+      "model": "skewed"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "permuted",
+      "width": 16,
+      "seed": 2,
+      "model": "mlp"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "permuted",
+      "width": 64,
+      "seed": 4,
+      "model": "random"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "native",
+      "width": 8,
+      "seed": 8,
+      "model": "skewed"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "permuted",
+      "width": 64,
+      "seed": 0,
+      "model": "random"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "native",
+      "width": 32,
+      "seed": 4,
+      "model": "random"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "permuted",
+      "width": 64,
+      "seed": 6,
+      "model": "skewed"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "permuted",
+      "width": 64,
+      "seed": 3,
+      "model": "mlp"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "native",
+      "width": 64,
+      "seed": 0,
+      "model": "skewed"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "permuted",
+      "width": 64,
+      "seed": 1,
+      "model": "random"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "native",
+      "width": 8,
+      "seed": 2,
+      "model": "skewed"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "native",
+      "width": 8,
+      "seed": 1,
+      "model": "mlp"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "native",
+      "width": 32,
+      "seed": 8,
+      "model": "balanced"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "permuted",
+      "width": 64,
+      "seed": 8,
+      "model": "mlp"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "native",
+      "width": 8,
+      "seed": 7,
+      "model": "balanced"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "permuted",
+      "width": 64,
+      "seed": 2,
+      "model": "random"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "native",
+      "width": 16,
+      "seed": 9,
+      "model": "random"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "native",
+      "width": 64,
+      "seed": 0,
+      "model": "balanced"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "permuted",
+      "width": 16,
+      "seed": 1,
+      "model": "mlp"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "native",
+      "width": 64,
+      "seed": 7,
+      "model": "skewed"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "permuted",
+      "width": 16,
+      "seed": 1,
+      "model": "balanced"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "permuted",
+      "width": 16,
+      "seed": 0,
+      "model": "random"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "native",
+      "width": 64,
+      "seed": 7,
+      "model": "random"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "permuted",
+      "width": 16,
+      "seed": 5,
+      "model": "balanced"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "native",
+      "width": 64,
+      "seed": 5,
+      "model": "skewed"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "native",
+      "width": 64,
+      "seed": 1,
+      "model": "mlp"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "native",
+      "width": 8,
+      "seed": 2,
+      "model": "balanced"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "permuted",
+      "width": 16,
+      "seed": 7,
+      "model": "random"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "permuted",
+      "width": 16,
+      "seed": 3,
+      "model": "random"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "permuted",
+      "width": 16,
+      "seed": 2,
+      "model": "random"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "native",
+      "width": 16,
+      "seed": 1,
+      "model": "random"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "permuted",
+      "width": 64,
+      "seed": 8,
+      "model": "balanced"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "native",
+      "width": 32,
+      "seed": 8,
+      "model": "mlp"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "native",
+      "width": 16,
+      "seed": 2,
+      "model": "skewed"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "native",
+      "width": 32,
+      "seed": 0,
+      "model": "balanced"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "native",
+      "width": 32,
+      "seed": 3,
+      "model": "mlp"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "native",
+      "width": 64,
+      "seed": 5,
+      "model": "random"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "permuted",
+      "width": 64,
+      "seed": 3,
+      "model": "balanced"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "permuted",
+      "width": 64,
+      "seed": 1,
+      "model": "balanced"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "permuted",
+      "width": 64,
+      "seed": 8,
+      "model": "mlp"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "permuted",
+      "width": 16,
+      "seed": 3,
+      "model": "mlp"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "permuted",
+      "width": 16,
+      "seed": 9,
+      "model": "random"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "native",
+      "width": 32,
+      "seed": 3,
+      "model": "mlp"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "native",
+      "width": 32,
+      "seed": 4,
+      "model": "mlp"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "native",
+      "width": 16,
+      "seed": 2,
+      "model": "balanced"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "permuted",
+      "width": 64,
+      "seed": 8,
+      "model": "skewed"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "native",
+      "width": 32,
+      "seed": 9,
+      "model": "balanced"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "native",
+      "width": 32,
+      "seed": 1,
+      "model": "random"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "native",
+      "width": 64,
+      "seed": 2,
+      "model": "skewed"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "native",
+      "width": 8,
+      "seed": 0,
+      "model": "skewed"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "permuted",
+      "width": 16,
+      "seed": 9,
+      "model": "mlp"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "permuted",
+      "width": 16,
+      "seed": 2,
+      "model": "mlp"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "native",
+      "width": 32,
+      "seed": 7,
+      "model": "skewed"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "native",
+      "width": 32,
+      "seed": 9,
+      "model": "skewed"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "native",
+      "width": 32,
+      "seed": 8,
+      "model": "mlp"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "permuted",
+      "width": 16,
+      "seed": 1,
+      "model": "random"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "permuted",
+      "width": 16,
+      "seed": 6,
+      "model": "balanced"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "permuted",
+      "width": 64,
+      "seed": 3,
+      "model": "skewed"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "native",
+      "width": 32,
+      "seed": 1,
+      "model": "mlp"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "native",
+      "width": 16,
+      "seed": 7,
+      "model": "skewed"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "native",
+      "width": 32,
+      "seed": 8,
+      "model": "random"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "native",
+      "width": 64,
+      "seed": 5,
+      "model": "random"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "permuted",
+      "width": 16,
+      "seed": 9,
+      "model": "balanced"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "native",
+      "width": 32,
+      "seed": 6,
+      "model": "balanced"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "native",
+      "width": 16,
+      "seed": 3,
+      "model": "skewed"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "native",
+      "width": 32,
+      "seed": 3,
+      "model": "skewed"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "native",
+      "width": 64,
+      "seed": 5,
+      "model": "mlp"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "native",
+      "width": 16,
+      "seed": 8,
+      "model": "skewed"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "native",
+      "width": 64,
+      "seed": 5,
+      "model": "random"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "native",
+      "width": 8,
+      "seed": 6,
+      "model": "mlp"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "native",
+      "width": 8,
+      "seed": 8,
+      "model": "random"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "native",
+      "width": 8,
+      "seed": 2,
+      "model": "mlp"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "native",
+      "width": 64,
+      "seed": 5,
+      "model": "skewed"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "native",
+      "width": 8,
+      "seed": 2,
+      "model": "balanced"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "permuted",
+      "width": 16,
+      "seed": 9,
+      "model": "skewed"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "native",
+      "width": 32,
+      "seed": 7,
+      "model": "balanced"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "permuted",
+      "width": 16,
+      "seed": 9,
+      "model": "mlp"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "permuted",
+      "width": 64,
+      "seed": 3,
+      "model": "skewed"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "native",
+      "width": 8,
+      "seed": 4,
+      "model": "mlp"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "native",
+      "width": 16,
+      "seed": 6,
+      "model": "skewed"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "native",
+      "width": 8,
+      "seed": 6,
+      "model": "random"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "native",
+      "width": 64,
+      "seed": 9,
+      "model": "skewed"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "native",
+      "width": 16,
+      "seed": 7,
+      "model": "mlp"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "native",
+      "width": 16,
+      "seed": 9,
+      "model": "balanced"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "native",
+      "width": 32,
+      "seed": 2,
+      "model": "mlp"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "native",
+      "width": 64,
+      "seed": 4,
+      "model": "mlp"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "native",
+      "width": 16,
+      "seed": 5,
+      "model": "mlp"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "native",
+      "width": 64,
+      "seed": 7,
+      "model": "skewed"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "native",
+      "width": 8,
+      "seed": 9,
+      "model": "random"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "native",
+      "width": 8,
+      "seed": 0,
+      "model": "skewed"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "native",
+      "width": 8,
+      "seed": 3,
+      "model": "mlp"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "native",
+      "width": 16,
+      "seed": 0,
+      "model": "mlp"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "native",
+      "width": 8,
+      "seed": 2,
+      "model": "random"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "native",
+      "width": 32,
+      "seed": 0,
+      "model": "skewed"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "permuted",
+      "width": 64,
+      "seed": 0,
+      "model": "balanced"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "native",
+      "width": 32,
+      "seed": 7,
+      "model": "mlp"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "permuted",
+      "width": 16,
+      "seed": 3,
+      "model": "random"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "permuted",
+      "width": 64,
+      "seed": 6,
+      "model": "mlp"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "native",
+      "width": 32,
+      "seed": 4,
+      "model": "mlp"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "native",
+      "width": 8,
+      "seed": 6,
+      "model": "balanced"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "native",
+      "width": 16,
+      "seed": 7,
+      "model": "balanced"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "native",
+      "width": 16,
+      "seed": 2,
+      "model": "mlp"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "native",
+      "width": 16,
+      "seed": 3,
+      "model": "skewed"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "native",
+      "width": 64,
+      "seed": 3,
+      "model": "random"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "native",
+      "width": 16,
+      "seed": 3,
+      "model": "mlp"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "native",
+      "width": 64,
+      "seed": 9,
+      "model": "balanced"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "native",
+      "width": 64,
+      "seed": 1,
+      "model": "random"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "native",
+      "width": 16,
+      "seed": 9,
+      "model": "random"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "permuted",
+      "width": 64,
+      "seed": 2,
+      "model": "balanced"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "native",
+      "width": 32,
+      "seed": 8,
+      "model": "balanced"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "native",
+      "width": 32,
+      "seed": 7,
+      "model": "balanced"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "permuted",
+      "width": 64,
+      "seed": 0,
+      "model": "random"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "native",
+      "width": 8,
+      "seed": 0,
+      "model": "mlp"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "permuted",
+      "width": 64,
+      "seed": 4,
+      "model": "mlp"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "native",
+      "width": 16,
+      "seed": 8,
+      "model": "random"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "native",
+      "width": 16,
+      "seed": 6,
+      "model": "balanced"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "permuted",
+      "width": 16,
+      "seed": 2,
+      "model": "balanced"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "native",
+      "width": 64,
+      "seed": 1,
+      "model": "skewed"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "permuted",
+      "width": 64,
+      "seed": 1,
+      "model": "skewed"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "native",
+      "width": 16,
+      "seed": 5,
+      "model": "random"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "native",
+      "width": 64,
+      "seed": 6,
+      "model": "skewed"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "native",
+      "width": 32,
+      "seed": 6,
+      "model": "random"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "native",
+      "width": 64,
+      "seed": 5,
+      "model": "skewed"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "permuted",
+      "width": 64,
+      "seed": 5,
+      "model": "balanced"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "native",
+      "width": 8,
+      "seed": 5,
+      "model": "skewed"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "native",
+      "width": 16,
+      "seed": 4,
+      "model": "random"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "native",
+      "width": 32,
+      "seed": 4,
+      "model": "balanced"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "permuted",
+      "width": 64,
+      "seed": 0,
+      "model": "balanced"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "native",
+      "width": 64,
+      "seed": 9,
+      "model": "random"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "permuted",
+      "width": 64,
+      "seed": 4,
+      "model": "balanced"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "native",
+      "width": 64,
+      "seed": 3,
+      "model": "skewed"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "native",
+      "width": 8,
+      "seed": 8,
+      "model": "skewed"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "native",
+      "width": 16,
+      "seed": 5,
+      "model": "skewed"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "native",
+      "width": 16,
+      "seed": 1,
+      "model": "skewed"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "native",
+      "width": 64,
+      "seed": 0,
+      "model": "skewed"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "native",
+      "width": 32,
+      "seed": 3,
+      "model": "balanced"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "permuted",
+      "width": 64,
+      "seed": 2,
+      "model": "random"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "permuted",
+      "width": 64,
+      "seed": 8,
+      "model": "random"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "permuted",
+      "width": 64,
+      "seed": 2,
+      "model": "skewed"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "native",
+      "width": 8,
+      "seed": 4,
+      "model": "random"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "native",
+      "width": 32,
+      "seed": 7,
+      "model": "mlp"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "native",
+      "width": 64,
+      "seed": 7,
+      "model": "mlp"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "native",
+      "width": 64,
+      "seed": 9,
+      "model": "balanced"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "native",
+      "width": 64,
+      "seed": 3,
+      "model": "mlp"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "permuted",
+      "width": 64,
+      "seed": 8,
+      "model": "balanced"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "native",
+      "width": 32,
+      "seed": 9,
+      "model": "random"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "native",
+      "width": 64,
+      "seed": 5,
+      "model": "mlp"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "permuted",
+      "width": 16,
+      "seed": 4,
+      "model": "mlp"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "permuted",
+      "width": 16,
+      "seed": 5,
+      "model": "skewed"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "native",
+      "width": 32,
+      "seed": 5,
+      "model": "skewed"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "permuted",
+      "width": 16,
+      "seed": 3,
+      "model": "mlp"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "native",
+      "width": 32,
+      "seed": 7,
+      "model": "random"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "native",
+      "width": 64,
+      "seed": 1,
+      "model": "random"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "native",
+      "width": 64,
+      "seed": 6,
+      "model": "skewed"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "native",
+      "width": 8,
+      "seed": 0,
+      "model": "skewed"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "permuted",
+      "width": 64,
+      "seed": 1,
+      "model": "balanced"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "native",
+      "width": 16,
+      "seed": 5,
+      "model": "balanced"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "native",
+      "width": 64,
+      "seed": 7,
+      "model": "random"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "native",
+      "width": 8,
+      "seed": 9,
+      "model": "balanced"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "native",
+      "width": 16,
+      "seed": 5,
+      "model": "mlp"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "native",
+      "width": 64,
+      "seed": 7,
+      "model": "balanced"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "permuted",
+      "width": 16,
+      "seed": 3,
+      "model": "balanced"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "native",
+      "width": 16,
+      "seed": 3,
+      "model": "mlp"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "permuted",
+      "width": 64,
+      "seed": 2,
+      "model": "balanced"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "permuted",
+      "width": 16,
+      "seed": 0,
+      "model": "skewed"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "native",
+      "width": 64,
+      "seed": 4,
+      "model": "skewed"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "native",
+      "width": 64,
+      "seed": 6,
+      "model": "random"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "native",
+      "width": 64,
+      "seed": 6,
+      "model": "skewed"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "native",
+      "width": 16,
+      "seed": 9,
+      "model": "skewed"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "permuted",
+      "width": 16,
+      "seed": 6,
+      "model": "random"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "native",
+      "width": 8,
+      "seed": 3,
+      "model": "balanced"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "native",
+      "width": 16,
+      "seed": 5,
+      "model": "mlp"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "permuted",
+      "width": 64,
+      "seed": 1,
+      "model": "random"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "native",
+      "width": 32,
+      "seed": 5,
+      "model": "mlp"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "native",
+      "width": 64,
+      "seed": 4,
+      "model": "skewed"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "permuted",
+      "width": 16,
+      "seed": 2,
+      "model": "balanced"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "native",
+      "width": 8,
+      "seed": 2,
+      "model": "random"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "native",
+      "width": 16,
+      "seed": 2,
+      "model": "mlp"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "native",
+      "width": 8,
+      "seed": 0,
+      "model": "balanced"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "native",
+      "width": 32,
+      "seed": 5,
+      "model": "balanced"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "native",
+      "width": 32,
+      "seed": 2,
+      "model": "skewed"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "native",
+      "width": 64,
+      "seed": 4,
+      "model": "mlp"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "permuted",
+      "width": 64,
+      "seed": 3,
+      "model": "skewed"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "native",
+      "width": 16,
+      "seed": 9,
+      "model": "mlp"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "native",
+      "width": 8,
+      "seed": 7,
+      "model": "random"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "native",
+      "width": 8,
+      "seed": 5,
+      "model": "balanced"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "native",
+      "width": 32,
+      "seed": 4,
+      "model": "balanced"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "native",
+      "width": 64,
+      "seed": 0,
+      "model": "balanced"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "native",
+      "width": 64,
+      "seed": 1,
+      "model": "balanced"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "permuted",
+      "width": 64,
+      "seed": 1,
+      "model": "mlp"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "native",
+      "width": 16,
+      "seed": 5,
+      "model": "random"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "permuted",
+      "width": 16,
+      "seed": 1,
+      "model": "random"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "native",
+      "width": 64,
+      "seed": 7,
+      "model": "mlp"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "native",
+      "width": 32,
+      "seed": 0,
+      "model": "mlp"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "native",
+      "width": 32,
+      "seed": 9,
+      "model": "mlp"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "native",
+      "width": 32,
+      "seed": 3,
+      "model": "skewed"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "native",
+      "width": 64,
+      "seed": 5,
+      "model": "random"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "native",
+      "width": 16,
+      "seed": 6,
+      "model": "balanced"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "permuted",
+      "width": 16,
+      "seed": 5,
+      "model": "random"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "native",
+      "width": 8,
+      "seed": 8,
+      "model": "balanced"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "native",
+      "width": 32,
+      "seed": 4,
+      "model": "random"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "permuted",
+      "width": 16,
+      "seed": 6,
+      "model": "skewed"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "native",
+      "width": 8,
+      "seed": 5,
+      "model": "random"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "native",
+      "width": 8,
+      "seed": 9,
+      "model": "skewed"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "native",
+      "width": 32,
+      "seed": 3,
+      "model": "mlp"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "native",
+      "width": 32,
+      "seed": 7,
+      "model": "skewed"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "native",
+      "width": 32,
+      "seed": 2,
+      "model": "balanced"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "native",
+      "width": 8,
+      "seed": 8,
+      "model": "mlp"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "native",
+      "width": 16,
+      "seed": 2,
+      "model": "balanced"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "permuted",
+      "width": 16,
+      "seed": 6,
+      "model": "mlp"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "native",
+      "width": 32,
+      "seed": 8,
+      "model": "random"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "native",
+      "width": 64,
+      "seed": 0,
+      "model": "random"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "permuted",
+      "width": 16,
+      "seed": 2,
+      "model": "mlp"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "native",
+      "width": 32,
+      "seed": 8,
+      "model": "mlp"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "permuted",
+      "width": 16,
+      "seed": 9,
+      "model": "balanced"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "native",
+      "width": 32,
+      "seed": 8,
+      "model": "random"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "native",
+      "width": 32,
+      "seed": 2,
+      "model": "random"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "native",
+      "width": 8,
+      "seed": 1,
+      "model": "skewed"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "permuted",
+      "width": 16,
+      "seed": 1,
+      "model": "balanced"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "native",
+      "width": 64,
+      "seed": 1,
+      "model": "mlp"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "native",
+      "width": 64,
+      "seed": 4,
+      "model": "random"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "permuted",
+      "width": 64,
+      "seed": 6,
+      "model": "random"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "native",
+      "width": 16,
+      "seed": 8,
+      "model": "random"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "native",
+      "width": 8,
+      "seed": 1,
+      "model": "skewed"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "permuted",
+      "width": 16,
+      "seed": 5,
+      "model": "random"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "native",
+      "width": 16,
+      "seed": 6,
+      "model": "random"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "permuted",
+      "width": 16,
+      "seed": 9,
+      "model": "skewed"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "permuted",
+      "width": 16,
+      "seed": 7,
+      "model": "balanced"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "permuted",
+      "width": 16,
+      "seed": 7,
+      "model": "skewed"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "native",
+      "width": 32,
+      "seed": 7,
+      "model": "random"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "native",
+      "width": 8,
+      "seed": 8,
+      "model": "mlp"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "native",
+      "width": 16,
+      "seed": 1,
+      "model": "random"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "native",
+      "width": 64,
+      "seed": 8,
+      "model": "mlp"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "native",
+      "width": 16,
+      "seed": 4,
+      "model": "balanced"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "native",
+      "width": 8,
+      "seed": 8,
+      "model": "random"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "permuted",
+      "width": 16,
+      "seed": 0,
+      "model": "mlp"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "native",
+      "width": 16,
+      "seed": 0,
+      "model": "random"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "permuted",
+      "width": 64,
+      "seed": 3,
+      "model": "random"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "permuted",
+      "width": 64,
+      "seed": 8,
+      "model": "random"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "permuted",
+      "width": 16,
+      "seed": 0,
+      "model": "skewed"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "native",
+      "width": 8,
+      "seed": 1,
+      "model": "random"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "native",
+      "width": 8,
+      "seed": 2,
+      "model": "skewed"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "native",
+      "width": 64,
+      "seed": 4,
+      "model": "random"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "native",
+      "width": 16,
+      "seed": 7,
+      "model": "balanced"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "native",
+      "width": 64,
+      "seed": 9,
+      "model": "skewed"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "native",
+      "width": 8,
+      "seed": 4,
+      "model": "balanced"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "native",
+      "width": 16,
+      "seed": 0,
+      "model": "balanced"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "permuted",
+      "width": 64,
+      "seed": 2,
+      "model": "mlp"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "native",
+      "width": 16,
+      "seed": 5,
+      "model": "skewed"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "native",
+      "width": 8,
+      "seed": 2,
+      "model": "mlp"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "native",
+      "width": 8,
+      "seed": 5,
+      "model": "skewed"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "permuted",
+      "width": 64,
+      "seed": 9,
+      "model": "random"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "permuted",
+      "width": 64,
+      "seed": 6,
+      "model": "random"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "permuted",
+      "width": 64,
+      "seed": 9,
+      "model": "balanced"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "native",
+      "width": 64,
+      "seed": 6,
+      "model": "mlp"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "permuted",
+      "width": 16,
+      "seed": 5,
+      "model": "mlp"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "native",
+      "width": 8,
+      "seed": 1,
+      "model": "random"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "native",
+      "width": 64,
+      "seed": 0,
+      "model": "balanced"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "native",
+      "width": 16,
+      "seed": 1,
+      "model": "skewed"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "native",
+      "width": 64,
+      "seed": 8,
+      "model": "skewed"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "native",
+      "width": 64,
+      "seed": 6,
+      "model": "random"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "native",
+      "width": 8,
+      "seed": 8,
+      "model": "random"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "native",
+      "width": 16,
+      "seed": 8,
+      "model": "balanced"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "native",
+      "width": 32,
+      "seed": 5,
+      "model": "balanced"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "native",
+      "width": 64,
+      "seed": 7,
+      "model": "mlp"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "native",
+      "width": 64,
+      "seed": 1,
+      "model": "balanced"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "native",
+      "width": 8,
+      "seed": 3,
+      "model": "random"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "native",
+      "width": 64,
+      "seed": 4,
+      "model": "balanced"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "native",
+      "width": 64,
+      "seed": 7,
+      "model": "balanced"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "native",
+      "width": 8,
+      "seed": 3,
+      "model": "random"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "native",
+      "width": 32,
+      "seed": 8,
+      "model": "mlp"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "native",
+      "width": 64,
+      "seed": 1,
+      "model": "random"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "native",
+      "width": 8,
+      "seed": 2,
+      "model": "balanced"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "native",
+      "width": 8,
+      "seed": 9,
+      "model": "skewed"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "native",
+      "width": 32,
+      "seed": 9,
+      "model": "balanced"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "permuted",
+      "width": 16,
+      "seed": 7,
+      "model": "random"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "native",
+      "width": 32,
+      "seed": 3,
+      "model": "skewed"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "permuted",
+      "width": 64,
+      "seed": 9,
+      "model": "mlp"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "native",
+      "width": 8,
+      "seed": 4,
+      "model": "skewed"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "native",
+      "width": 8,
+      "seed": 1,
+      "model": "balanced"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "permuted",
+      "width": 64,
+      "seed": 2,
+      "model": "balanced"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "native",
+      "width": 16,
+      "seed": 5,
+      "model": "balanced"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "native",
+      "width": 32,
+      "seed": 2,
+      "model": "mlp"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "permuted",
+      "width": 64,
+      "seed": 2,
+      "model": "mlp"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "native",
+      "width": 8,
+      "seed": 9,
+      "model": "skewed"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "native",
+      "width": 16,
+      "seed": 6,
+      "model": "skewed"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "permuted",
+      "width": 16,
+      "seed": 8,
+      "model": "mlp"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "native",
+      "width": 64,
+      "seed": 9,
+      "model": "mlp"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "native",
+      "width": 16,
+      "seed": 7,
+      "model": "skewed"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "native",
+      "width": 8,
+      "seed": 4,
+      "model": "skewed"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "native",
+      "width": 32,
+      "seed": 9,
+      "model": "random"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "native",
+      "width": 16,
+      "seed": 4,
+      "model": "skewed"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "native",
+      "width": 8,
+      "seed": 7,
+      "model": "balanced"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "permuted",
+      "width": 64,
+      "seed": 4,
+      "model": "balanced"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "permuted",
+      "width": 16,
+      "seed": 9,
+      "model": "balanced"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "permuted",
+      "width": 64,
+      "seed": 7,
+      "model": "random"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "permuted",
+      "width": 16,
+      "seed": 5,
+      "model": "random"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "native",
+      "width": 8,
+      "seed": 3,
+      "model": "random"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "permuted",
+      "width": 16,
+      "seed": 2,
+      "model": "skewed"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "permuted",
+      "width": 16,
+      "seed": 8,
+      "model": "mlp"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "permuted",
+      "width": 64,
+      "seed": 9,
+      "model": "balanced"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "native",
+      "width": 16,
+      "seed": 7,
+      "model": "skewed"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "native",
+      "width": 8,
+      "seed": 0,
+      "model": "random"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "native",
+      "width": 32,
+      "seed": 5,
+      "model": "balanced"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "native",
+      "width": 32,
+      "seed": 8,
+      "model": "skewed"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "permuted",
+      "width": 64,
+      "seed": 6,
+      "model": "balanced"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "native",
+      "width": 16,
+      "seed": 1,
+      "model": "skewed"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "native",
+      "width": 8,
+      "seed": 6,
+      "model": "balanced"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "native",
+      "width": 64,
+      "seed": 7,
+      "model": "balanced"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "permuted",
+      "width": 16,
+      "seed": 5,
+      "model": "balanced"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "permuted",
+      "width": 16,
+      "seed": 0,
+      "model": "balanced"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "native",
+      "width": 64,
+      "seed": 8,
+      "model": "random"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "native",
+      "width": 8,
+      "seed": 9,
+      "model": "balanced"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "native",
+      "width": 8,
+      "seed": 0,
+      "model": "mlp"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "permuted",
+      "width": 64,
+      "seed": 3,
+      "model": "random"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "native",
+      "width": 32,
+      "seed": 9,
+      "model": "mlp"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "native",
+      "width": 16,
+      "seed": 7,
+      "model": "balanced"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "native",
+      "width": 8,
+      "seed": 9,
+      "model": "random"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "permuted",
+      "width": 16,
+      "seed": 8,
+      "model": "skewed"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "native",
+      "width": 16,
+      "seed": 5,
+      "model": "skewed"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "permuted",
+      "width": 16,
+      "seed": 6,
+      "model": "balanced"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "native",
+      "width": 32,
+      "seed": 1,
+      "model": "random"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "permuted",
+      "width": 64,
+      "seed": 9,
+      "model": "mlp"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "native",
+      "width": 16,
+      "seed": 4,
+      "model": "mlp"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "native",
+      "width": 64,
+      "seed": 8,
+      "model": "balanced"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "permuted",
+      "width": 64,
+      "seed": 5,
+      "model": "mlp"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "native",
+      "width": 8,
+      "seed": 7,
+      "model": "random"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "native",
+      "width": 32,
+      "seed": 2,
+      "model": "balanced"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "permuted",
+      "width": 64,
+      "seed": 9,
+      "model": "skewed"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "native",
+      "width": 64,
+      "seed": 2,
+      "model": "skewed"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "permuted",
+      "width": 16,
+      "seed": 0,
+      "model": "skewed"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "permuted",
+      "width": 64,
+      "seed": 0,
+      "model": "skewed"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "permuted",
+      "width": 64,
+      "seed": 4,
+      "model": "random"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "permuted",
+      "width": 64,
+      "seed": 5,
+      "model": "random"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "permuted",
+      "width": 16,
+      "seed": 1,
+      "model": "skewed"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "native",
+      "width": 32,
+      "seed": 3,
+      "model": "random"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "permuted",
+      "width": 64,
+      "seed": 6,
+      "model": "random"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "permuted",
+      "width": 16,
+      "seed": 7,
+      "model": "balanced"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "native",
+      "width": 32,
+      "seed": 6,
+      "model": "skewed"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "permuted",
+      "width": 16,
+      "seed": 1,
+      "model": "random"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "permuted",
+      "width": 16,
+      "seed": 7,
+      "model": "balanced"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "permuted",
+      "width": 16,
+      "seed": 8,
+      "model": "balanced"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "native",
+      "width": 64,
+      "seed": 1,
+      "model": "mlp"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "native",
+      "width": 16,
+      "seed": 4,
+      "model": "random"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "permuted",
+      "width": 16,
+      "seed": 9,
+      "model": "skewed"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "native",
+      "width": 64,
+      "seed": 6,
+      "model": "balanced"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "native",
+      "width": 8,
+      "seed": 7,
+      "model": "skewed"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "native",
+      "width": 16,
+      "seed": 0,
+      "model": "random"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "native",
+      "width": 64,
+      "seed": 0,
+      "model": "mlp"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "native",
+      "width": 32,
+      "seed": 9,
+      "model": "mlp"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "native",
+      "width": 8,
+      "seed": 2,
+      "model": "skewed"
+    },
+    {
+      "dataset": "spambase",
+      "ordering": "native",
+      "width": 8,
+      "seed": 3,
+      "model": "balanced"
+    },
+    {
+      "dataset": "pendigits",
+      "ordering": "permuted",
+      "width": 64,
+      "seed": 2,
+      "model": "skewed"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "permuted",
+      "width": 64,
+      "seed": 0,
+      "model": "mlp"
+    },
+    {
+      "dataset": "optdigits",
+      "ordering": "permuted",
+      "width": 64,
+      "seed": 4,
+      "model": "balanced"
+    },
+    {
+      "dataset": "satimage",
+      "ordering": "permuted",
+      "width": 64,
+      "seed": 4,
+      "model": "balanced"
+    }
+  ],
+  "started_unix": 1792031435.162123,
+  "finished_unix": 1792032827.589077,
+  "total_elapsed_seconds": 1392.4269540309906
+}

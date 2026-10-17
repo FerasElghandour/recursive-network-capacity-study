@@ -1,0 +1,4 @@
+# Observed direct imports; versions require a clean-environment check.
+matplotlib
+numpy
+torch

@@ -1,0 +1,218 @@
+[
+  {
+    "dataset": "optdigits",
+    "width": 8,
+    "model": "balanced",
+    "batch": 3,
+    "analytical_training_linear_macs": 11856,
+    "profiler_linear_macs": 11856,
+    "match": true
+  },
+  {
+    "dataset": "optdigits",
+    "width": 8,
+    "model": "skewed",
+    "batch": 3,
+    "analytical_training_linear_macs": 11856,
+    "profiler_linear_macs": 11856,
+    "match": true
+  },
+  {
+    "dataset": "optdigits",
+    "width": 8,
+    "model": "mlp",
+    "batch": 3,
+    "analytical_training_linear_macs": 10167,
+    "profiler_linear_macs": 10167,
+    "match": true
+  },
+  {
+    "dataset": "optdigits",
+    "width": 64,
+    "model": "balanced",
+    "batch": 3,
+    "analytical_training_linear_macs": 546432,
+    "profiler_linear_macs": 546432,
+    "match": true
+  },
+  {
+    "dataset": "optdigits",
+    "width": 64,
+    "model": "skewed",
+    "batch": 3,
+    "analytical_training_linear_macs": 546432,
+    "profiler_linear_macs": 546432,
+    "match": true
+  },
+  {
+    "dataset": "optdigits",
+    "width": 64,
+    "model": "mlp",
+    "batch": 3,
+    "analytical_training_linear_macs": 490407,
+    "profiler_linear_macs": 490407,
+    "match": true
+  },
+  {
+    "dataset": "pendigits",
+    "width": 8,
+    "model": "balanced",
+    "batch": 3,
+    "analytical_training_linear_macs": 9552,
+    "profiler_linear_macs": 9552,
+    "match": true
+  },
+  {
+    "dataset": "pendigits",
+    "width": 8,
+    "model": "skewed",
+    "batch": 3,
+    "analytical_training_linear_macs": 9552,
+    "profiler_linear_macs": 9552,
+    "match": true
+  },
+  {
+    "dataset": "pendigits",
+    "width": 8,
+    "model": "mlp",
+    "batch": 3,
+    "analytical_training_linear_macs": 8400,
+    "profiler_linear_macs": 8400,
+    "match": true
+  },
+  {
+    "dataset": "pendigits",
+    "width": 64,
+    "model": "balanced",
+    "batch": 3,
+    "analytical_training_linear_macs": 528000,
+    "profiler_linear_macs": 528000,
+    "match": true
+  },
+  {
+    "dataset": "pendigits",
+    "width": 64,
+    "model": "skewed",
+    "batch": 3,
+    "analytical_training_linear_macs": 528000,
+    "profiler_linear_macs": 528000,
+    "match": true
+  },
+  {
+    "dataset": "pendigits",
+    "width": 64,
+    "model": "mlp",
+    "batch": 3,
+    "analytical_training_linear_macs": 512034,
+    "profiler_linear_macs": 512034,
+    "match": true
+  },
+  {
+    "dataset": "spambase",
+    "width": 8,
+    "model": "balanced",
+    "batch": 3,
+    "analytical_training_linear_macs": 10944,
+    "profiler_linear_macs": 10944,
+    "match": true
+  },
+  {
+    "dataset": "spambase",
+    "width": 8,
+    "model": "skewed",
+    "batch": 3,
+    "analytical_training_linear_macs": 10944,
+    "profiler_linear_macs": 10944,
+    "match": true
+  },
+  {
+    "dataset": "spambase",
+    "width": 8,
+    "model": "mlp",
+    "batch": 3,
+    "analytical_training_linear_macs": 9216,
+    "profiler_linear_macs": 9216,
+    "match": true
+  },
+  {
+    "dataset": "spambase",
+    "width": 64,
+    "model": "balanced",
+    "batch": 3,
+    "analytical_training_linear_macs": 539136,
+    "profiler_linear_macs": 539136,
+    "match": true
+  },
+  {
+    "dataset": "spambase",
+    "width": 64,
+    "model": "skewed",
+    "batch": 3,
+    "analytical_training_linear_macs": 539136,
+    "profiler_linear_macs": 539136,
+    "match": true
+  },
+  {
+    "dataset": "spambase",
+    "width": 64,
+    "model": "mlp",
+    "batch": 3,
+    "analytical_training_linear_macs": 485118,
+    "profiler_linear_macs": 485118,
+    "match": true
+  },
+  {
+    "dataset": "satimage",
+    "width": 8,
+    "model": "balanced",
+    "batch": 3,
+    "analytical_training_linear_macs": 11376,
+    "profiler_linear_macs": 11376,
+    "match": true
+  },
+  {
+    "dataset": "satimage",
+    "width": 8,
+    "model": "skewed",
+    "batch": 3,
+    "analytical_training_linear_macs": 11376,
+    "profiler_linear_macs": 11376,
+    "match": true
+  },
+  {
+    "dataset": "satimage",
+    "width": 8,
+    "model": "mlp",
+    "batch": 3,
+    "analytical_training_linear_macs": 10044,
+    "profiler_linear_macs": 10044,
+    "match": true
+  },
+  {
+    "dataset": "satimage",
+    "width": 64,
+    "model": "balanced",
+    "batch": 3,
+    "analytical_training_linear_macs": 607104,
+    "profiler_linear_macs": 607104,
+    "match": true
+  },
+  {
+    "dataset": "satimage",
+    "width": 64,
+    "model": "skewed",
+    "batch": 3,
+    "analytical_training_linear_macs": 607104,
+    "profiler_linear_macs": 607104,
+    "match": true
+  },
+  {
+    "dataset": "satimage",
+    "width": 64,
+    "model": "mlp",
+    "batch": 3,
+    "analytical_training_linear_macs": 567540,
+    "profiler_linear_macs": 567540,
+    "match": true
+  }
+]

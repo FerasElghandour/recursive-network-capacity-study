@@ -1,0 +1,7 @@
+{
+  "bootstrap_resamples": 20000,
+  "bootstrap_seed": 20261015,
+  "script_sha256": "f30a55019a3a619bf718d0dc1189bbce37f0a46bff011a3e6da9f47060d7e6b8",
+  "native_cell_tests_per_metric": 48,
+  "native_slope_tests_per_metric": 12
+}

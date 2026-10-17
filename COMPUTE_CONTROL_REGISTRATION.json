@@ -1,0 +1,10 @@
+{
+  "registered_unix": 1792032323.841831,
+  "main_training_completed_runs_at_registration": 608,
+  "main_finished": false,
+  "no_main_test_metrics_present": true,
+  "hashes": {
+    "COMPUTE_CONTROL_PROTOCOL.md": "b3f8865b08f3dd0b73ad0c793ff1262385f429ab7104b6d0f9c74c99099ec354",
+    "run_compute_control.py": "e9da04b8c2b79d6d0499b8aff44c9cdf545ac1ded223b31b2314dd7f758607f8"
+  }
+}

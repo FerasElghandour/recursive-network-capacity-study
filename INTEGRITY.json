@@ -1,0 +1,18 @@
+{
+  "main_runs": 960,
+  "supplementary_runs": 160,
+  "total_runs": 1120,
+  "checkpoints": 1120,
+  "prediction_files": 1120,
+  "history_rows": 68360,
+  "all_selected_checkpoints_match_minimum_validation_loss": true,
+  "all_saved_logits_reproduce_reported_test_metrics": true,
+  "maximum_accuracy_roundoff": 2.9751203500794077e-08,
+  "maximum_loss_roundoff": 8.910814452978144e-08,
+  "main_source_data_protocol_hashes_match": true,
+  "supplementary_registration_hashes_match": true,
+  "analysis_source_hash_matches": true,
+  "exact_retraining_checks_passed": 4,
+  "profiler_linear_compute_checks_passed": 24,
+  "feature_preprocessing_files": 80
+}

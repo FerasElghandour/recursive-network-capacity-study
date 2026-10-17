@@ -1,0 +1,258 @@
+[
+  {
+    "dataset": "optdigits",
+    "width": 8,
+    "tree_params": 1618,
+    "tree_macs": 1488,
+    "dense_widths": [
+      19,
+      11
+    ],
+    "dense_counts": {
+      "params": 1575,
+      "forward_macs": 1535,
+      "max_merge_depth": null,
+      "mean_merge_depth": null
+    }
+  },
+  {
+    "dataset": "optdigits",
+    "width": 16,
+    "tree_params": 5018,
+    "tree_macs": 4768,
+    "dense_widths": [
+      49,
+      29
+    ],
+    "dense_counts": {
+      "params": 4935,
+      "forward_macs": 4847,
+      "max_merge_depth": null,
+      "mean_merge_depth": null
+    }
+  },
+  {
+    "dataset": "optdigits",
+    "width": 32,
+    "tree_params": 17194,
+    "tree_macs": 16704,
+    "dense_widths": [
+      114,
+      77
+    ],
+    "dense_counts": {
+      "params": 17045,
+      "forward_macs": 16844,
+      "max_merge_depth": null,
+      "mean_merge_depth": null
+    }
+  },
+  {
+    "dataset": "optdigits",
+    "width": 64,
+    "tree_params": 63050,
+    "tree_macs": 62080,
+    "dense_widths": [
+      367,
+      103
+    ],
+    "dense_counts": {
+      "params": 62799,
+      "forward_macs": 62319,
+      "max_merge_depth": null,
+      "mean_merge_depth": null
+    }
+  },
+  {
+    "dataset": "pendigits",
+    "width": 8,
+    "tree_params": 1234,
+    "tree_macs": 1104,
+    "dense_widths": [
+      38,
+      11
+    ],
+    "dense_counts": {
+      "params": 1195,
+      "forward_macs": 1136,
+      "max_merge_depth": null,
+      "mean_merge_depth": null
+    }
+  },
+  {
+    "dataset": "pendigits",
+    "width": 16,
+    "tree_params": 4250,
+    "tree_macs": 4000,
+    "dense_widths": [
+      93,
+      25
+    ],
+    "dense_counts": {
+      "params": 4191,
+      "forward_macs": 4063,
+      "max_merge_depth": null,
+      "mean_merge_depth": null
+    }
+  },
+  {
+    "dataset": "pendigits",
+    "width": 32,
+    "tree_params": 15658,
+    "tree_macs": 15168,
+    "dense_widths": [
+      188,
+      62
+    ],
+    "dense_counts": {
+      "params": 15544,
+      "forward_macs": 15284,
+      "max_merge_depth": null,
+      "mean_merge_depth": null
+    }
+  },
+  {
+    "dataset": "pendigits",
+    "width": 64,
+    "tree_params": 59978,
+    "tree_macs": 59008,
+    "dense_widths": [
+      433,
+      118
+    ],
+    "dense_counts": {
+      "params": 59763,
+      "forward_macs": 59202,
+      "max_merge_depth": null,
+      "mean_merge_depth": null
+    }
+  },
+  {
+    "dataset": "spambase",
+    "width": 8,
+    "tree_params": 1490,
+    "tree_macs": 1368,
+    "dense_widths": [
+      20,
+      12
+    ],
+    "dense_counts": {
+      "params": 1438,
+      "forward_macs": 1404,
+      "max_merge_depth": null,
+      "mean_merge_depth": null
+    }
+  },
+  {
+    "dataset": "spambase",
+    "width": 16,
+    "tree_params": 4770,
+    "tree_macs": 4528,
+    "dense_widths": [
+      51,
+      32
+    ],
+    "dense_counts": {
+      "params": 4688,
+      "forward_macs": 4603,
+      "max_merge_depth": null,
+      "mean_merge_depth": null
+    }
+  },
+  {
+    "dataset": "spambase",
+    "width": 32,
+    "tree_params": 16706,
+    "tree_macs": 16224,
+    "dense_widths": [
+      105,
+      97
+    ],
+    "dense_counts": {
+      "params": 16568,
+      "forward_macs": 16364,
+      "max_merge_depth": null,
+      "mean_merge_depth": null
+    }
+  },
+  {
+    "dataset": "spambase",
+    "width": 64,
+    "tree_params": 62082,
+    "tree_macs": 61120,
+    "dense_widths": [
+      392,
+      99
+    ],
+    "dense_counts": {
+      "params": 61843,
+      "forward_macs": 61350,
+      "max_merge_depth": null,
+      "mean_merge_depth": null
+    }
+  },
+  {
+    "dataset": "satimage",
+    "width": 8,
+    "tree_params": 1502,
+    "tree_macs": 1360,
+    "dense_widths": [
+      24,
+      18
+    ],
+    "dense_counts": {
+      "params": 1452,
+      "forward_macs": 1404,
+      "max_merge_depth": null,
+      "mean_merge_depth": null
+    }
+  },
+  {
+    "dataset": "satimage",
+    "width": 16,
+    "tree_params": 5046,
+    "tree_macs": 4768,
+    "dense_widths": [
+      55,
+      47
+    ],
+    "dense_counts": {
+      "params": 4955,
+      "forward_macs": 4847,
+      "max_merge_depth": null,
+      "mean_merge_depth": null
+    }
+  },
+  {
+    "dataset": "satimage",
+    "width": 32,
+    "tree_params": 18278,
+    "tree_macs": 17728,
+    "dense_widths": [
+      195,
+      54
+    ],
+    "dense_counts": {
+      "params": 18129,
+      "forward_macs": 17874,
+      "max_merge_depth": null,
+      "mean_merge_depth": null
+    }
+  },
+  {
+    "dataset": "satimage",
+    "width": 64,
+    "tree_params": 69318,
+    "tree_macs": 68224,
+    "dense_widths": [
+      452,
+      114
+    ],
+    "dense_counts": {
+      "params": 69056,
+      "forward_macs": 68484,
+      "max_merge_depth": null,
+      "mean_merge_depth": null
+    }
+  }
+]
