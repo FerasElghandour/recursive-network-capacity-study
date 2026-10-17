@@ -1,0 +1,26 @@
+{
+  "all_checkpoint_prediction_replays": 256,
+  "representative_fresh_retrains": [
+    {
+      "run": "optdigits_native_16_1000_balanced",
+      "checkpoint_exact": true,
+      "selected_epoch_exact": true
+    },
+    {
+      "run": "optdigits_native_16_1000_random",
+      "checkpoint_exact": true,
+      "selected_epoch_exact": true
+    },
+    {
+      "run": "pendigits_native_16_1000_balanced",
+      "checkpoint_exact": true,
+      "selected_epoch_exact": true
+    },
+    {
+      "run": "pendigits_native_16_1000_random",
+      "checkpoint_exact": true,
+      "selected_epoch_exact": true
+    }
+  ],
+  "source_manifest_unchanged": true
+}

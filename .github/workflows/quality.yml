@@ -17,6 +17,7 @@ jobs:
       - run: python -m pip install -r requirements.txt
       - run: |
           python run_grid.py --self-check
+          python -m unittest test_followup.py -q
         env:
           OMP_NUM_THREADS: '2'
           OPENBLAS_NUM_THREADS: '2'

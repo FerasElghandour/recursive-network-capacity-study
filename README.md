@@ -42,6 +42,19 @@ These are demonstration outputs, **not held-out accuracy or evidence that one to
 
 Change the training duration or seed with `python examples/train_toy.py --epochs 20 --seed 1`.
 
+## New paired-seed follow-up
+
+All **256 new training runs** completed across Optdigits and Pendigits, with 32 paired seeds, width 16 and native/permuted feature-order controls. Balanced trees improve mean native-order Optdigits accuracy by **0.54 percentage points** over random trees (Holm-adjusted p = 0.0021). Pendigits and both order interactions show no clear effect under the declared analysis.
+
+![Every new seed pair, with descriptive intervals and corrected p values](results/followup-v1/paired-effects.svg)
+
+This is a narrow follow-up on previously inspected datasets. All 256 trained models are included for replay; four representative retraining runs reproduced their weights exactly. [Results and limits](results/followup-v1/RESULTS.md) · [Frozen settings](FOLLOWUP_PROTOCOL.json).
+
+```sh
+python verify_followup.py --results results/followup-v1
+python followup.py --out new-followup
+```
+
 ## Study results
 
 The recorded study contains **960 main runs plus 160 compute-control runs**, across four datasets, ten seeds and four capacity levels, with feature-order controls. Balanced trees exceed random-tree mean accuracy in **14/16 native settings**, but exceed the corrected-compute dense baseline in only **5/16**. Dense models remain faster.
@@ -60,7 +73,7 @@ python run_grid.py --verify results
 python analyze_results.py --results results --compute-control compute_control
 ```
 
-The verification command retrains four representative balanced runs and compares checkpoints and held-out predictions. Only those four checkpoints and prediction arrays are bundled; all aggregate records and training histories are retained.
+The verification command retrains four representative balanced runs and compares checkpoints and held-out predictions. For the original grid, only those four checkpoints and prediction arrays are bundled; all aggregate records and training histories are retained. The separate new follow-up includes all 256 trained models.
 
 For a complete new training grid:
 
@@ -76,3 +89,7 @@ This is a substantial CPU workload. [Compute-control protocol](COMPUTE_CONTROL_P
 This finite tabular study does not establish a universal scaling law or general topology advantage. Accuracy and timing depend on data, model budgets, feature order and hardware. Four representative reproductions do not mean all 1,120 recorded runs were retrained for this release. The new toy example does not modify those records.
 
 Run `python build_report.py` to rebuild the hosted static explorer from the retained native-order summary. Full experiments run separately.
+
+## Reuse
+
+The original contributions listed in [LICENSING.md](LICENSING.md) are available under [MIT](LICENSE). This scoped grant preserves upstream notices and separate dataset, simulator, notebook and checkpoint terms.

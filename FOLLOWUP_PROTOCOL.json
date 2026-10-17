@@ -1,0 +1,20 @@
+{
+  "name": "paired-topology-followup-v1",
+  "declared_date": "2026-10-17",
+  "source_base_commit": "41c58aa1c4839a6e3993f058dc8b9870fdb6dd35",
+  "datasets": ["optdigits", "pendigits"],
+  "seeds": [1000,1001,1002,1003,1004,1005,1006,1007,1008,1009,1010,1011,1012,1013,1014,1015,1016,1017,1018,1019,1020,1021,1022,1023,1024,1025,1026,1027,1028,1029,1030,1031],
+  "models": ["balanced", "random"],
+  "orderings": ["native", "permuted"],
+  "width": 16,
+  "epochs": 60,
+  "checkpoint_selection": "minimum validation cross entropy; first minimum wins",
+  "primary_endpoint": "test accuracy difference, balanced minus random, paired by seed",
+  "primary_family": ["optdigits_native", "pendigits_native", "optdigits_order_interaction", "pendigits_order_interaction"],
+  "interaction": "(balanced-random) native minus (balanced-random) permuted",
+  "inference": "two-sided Monte Carlo paired sign-flip test, 200000 draws, add-one p; Holm correction across four primary hypotheses; paired-seed percentile bootstrap with 20000 draws for descriptive 95% intervals",
+  "analysis_seed": 20261017,
+  "device": "cpu",
+  "torch_threads": 1,
+  "limits": "Settings frozen locally before training. These datasets and original test results were inspected previously. New training/split seeds provide a within-benchmark follow-up, not a new external dataset, independent preregistration, universal topology advantage, or robot-learning result. Timings under concurrent local workloads are descriptive, not hardware benchmarks."
+}

@@ -1,0 +1,73 @@
+{
+  "primary_family": {
+    "optdigits_native": {
+      "n_pairs": 32,
+      "mean_difference": 0.005408313125371933,
+      "median_difference": 0.0016694366931915283,
+      "sample_sd": 0.008501079830426682,
+      "descriptive_95pct_interval": [
+        0.002625903068110347,
+        0.008468970656394958
+      ],
+      "positive_pairs": 24,
+      "ties": 0,
+      "negative_pairs": 8,
+      "p_value": 0.00052999735001325,
+      "test": "Monte Carlo paired sign flip, add-one",
+      "monte_carlo_draws": 200000,
+      "holm_p_value": 0.002119989400053
+    },
+    "optdigits_order_interaction": {
+      "n_pairs": 32,
+      "mean_difference": 0.00020867586135864258,
+      "median_difference": 0.0005564987659454346,
+      "sample_sd": 0.013062735796228879,
+      "descriptive_95pct_interval": [
+        -0.004208851885050535,
+        0.004556197673082352
+      ],
+      "positive_pairs": 17,
+      "ties": 1,
+      "negative_pairs": 14,
+      "p_value": 0.9335903320483397,
+      "test": "Monte Carlo paired sign flip, add-one",
+      "monte_carlo_draws": 200000,
+      "holm_p_value": 1.0
+    },
+    "pendigits_native": {
+      "n_pairs": 32,
+      "mean_difference": 0.0015276558697223663,
+      "median_difference": 0.0020011067390441895,
+      "sample_sd": 0.00816326332157645,
+      "descriptive_95pct_interval": [
+        -0.0012507178355008364,
+        0.004297096328809857
+      ],
+      "positive_pairs": 18,
+      "ties": 0,
+      "negative_pairs": 14,
+      "p_value": 0.29726851365743173,
+      "test": "Monte Carlo paired sign flip, add-one",
+      "monte_carlo_draws": 200000,
+      "holm_p_value": 0.8918055409722951
+    },
+    "pendigits_order_interaction": {
+      "n_pairs": 32,
+      "mean_difference": -4.4677406549453735e-05,
+      "median_difference": 0.0005717873573303223,
+      "sample_sd": 0.011964650849785402,
+      "descriptive_95pct_interval": [
+        -0.004073991952463984,
+        0.0040114350151270435
+      ],
+      "positive_pairs": 18,
+      "ties": 0,
+      "negative_pairs": 14,
+      "p_value": 0.9813650931745341,
+      "test": "Monte Carlo paired sign flip, add-one",
+      "monte_carlo_draws": 200000,
+      "holm_p_value": 1.0
+    }
+  },
+  "scope": "Settings frozen locally before training. These datasets and original test results were inspected previously. New training/split seeds provide a within-benchmark follow-up, not a new external dataset, independent preregistration, universal topology advantage, or robot-learning result. Timings under concurrent local workloads are descriptive, not hardware benchmarks."
+}
