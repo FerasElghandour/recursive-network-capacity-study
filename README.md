@@ -4,6 +4,10 @@
 
 Test whether balanced recursive topologies offer a useful accuracy or compute advantage over alternative trees and dense networks.
 
+**[Explore the interactive demonstration](https://feraselghandour.github.io/recursive-network-capacity-study/)** · [Operating scope](OPERATIONS.md)
+
+[![Interactive demonstration](assets/demo-preview.png)](https://feraselghandour.github.io/recursive-network-capacity-study/)
+
 ## Implementation
 
 A predeclared four-dataset experiment with balanced, random, skewed, and dense models; feature-order controls; ten seeds; four capacity levels; and a supplementary corrected-compute comparison. Data preprocessing, per-run metrics, histories, and analysis are included.
@@ -40,3 +44,7 @@ A complete new grid is available with `python run_grid.py --out new_results`, fo
 This finite tabular study does not establish a universal scaling law or general topology advantage. Accuracy and timing depend on data, model budgets, feature order, and hardware. Four fresh representative reproductions do not mean all 1,120 runs were retrained for this release.
 
 [Validation record](VALIDATION.md) · [Inputs and applicable notices](DATA.md)
+
+## Rebuild the public demonstration
+
+Run `python build_report.py` to rebuild the explorer from the retained native-order summary. The hosted page is a static evidence explorer; the Python application and full experiments run separately.

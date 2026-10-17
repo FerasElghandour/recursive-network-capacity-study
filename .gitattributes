@@ -1,0 +1,4 @@
+data/** linguist-vendored=true
+results/** linguist-generated=true
+compute_control/** linguist-generated=true
+docs/data.json linguist-generated=true
